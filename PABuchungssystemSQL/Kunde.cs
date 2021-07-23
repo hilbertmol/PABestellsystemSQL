@@ -23,7 +23,7 @@ namespace PABuchungssystemSQL
         {
             get
             {
-                return $" { Kundennr } { Nachname } { Email }";
+                return $" { Kundennr } { Nachname } { Email } { Telefon }";
             } 
         }
     }
