@@ -29,7 +29,7 @@ namespace PABuchungssystemSQL
             {
                 if (drv.Row.RowState == DataRowState.Detached)
                 {
-                    txtKundenNr.Text = "";
+                    txtKundennr.Text = "";
                     txtVorname.Text = "";
                     txtNachname.Text = "";
                     txtEmail.Text = "";
@@ -41,7 +41,7 @@ namespace PABuchungssystemSQL
                 }
                 else
                 {
-                    txtKundenNr.Text = drv["kundennr"].ToString();
+                    txtKundennr.Text = drv["kundennr"].ToString();
                     txtVorname.Text = drv["vorname"].ToString();
                     txtNachname.Text = drv["nachname"].ToString();
                     txtEmail.Text = drv["email"].ToString();
@@ -57,7 +57,7 @@ namespace PABuchungssystemSQL
                     string sqlCmd = "";
                     if (drv.Row.RowState == DataRowState.Detached)
                     {
-                        sqlCmd = "insert into kunden values ('" + txtKundenNr.Text + "'" +
+                        sqlCmd = "insert into kunden values ('" + txtKundennr.Text + "'" +
                                                             ", '" + txtVorname.Text + "'" +
                                                             ", '" + txtNachname.Text + "'" +
                                                             ", '" + txtEmail.Text + "'" +
@@ -78,7 +78,7 @@ namespace PABuchungssystemSQL
                                                 ", hausnr = '" + txtHausnr.Text + "' " +
                                                 ", plz = '" + txtPlz.Text + "' " +
                                                 ", ort = '" + txtOrt.Text + "' " +
-                                                "where kundennr = '" + txtKundenNr.Text + "'";
+                                                "where kundennr = '" + txtKundennr.Text + "'";
                     }
                     using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
                     {
@@ -89,7 +89,7 @@ namespace PABuchungssystemSQL
                         sqlConn.Close();
                     }
                     drv.BeginEdit();
-                    drv["kundennr"] = txtKundenNr.Text;
+                    drv["kundennr"] = txtKundennr.Text;
                     drv["vorname"] = txtVorname.Text;
                     drv["nachname"] = txtNachname.Text;
                     drv["email"] = txtEmail.Text;

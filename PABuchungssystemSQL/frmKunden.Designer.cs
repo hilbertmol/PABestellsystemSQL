@@ -1,7 +1,7 @@
 ﻿
 namespace PABuchungssystemSQL
 {
-    partial class Form1
+    partial class frmKunden
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -29,39 +29,41 @@ namespace PABuchungssystemSQL
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
+            this.txtKundennr = new System.Windows.Forms.TextBox();
+            this.lblKundennr = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.dgvKunden = new System.Windows.Forms.DataGridView();
             this.lblUeberschriftKunden = new System.Windows.Forms.Label();
             this.btnLöschen = new System.Windows.Forms.Button();
             this.btnAktualisieren = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKunden)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtName
+            // txtKundennr
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(939, 730);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(339, 26);
-            this.txtName.TabIndex = 1;
+            this.txtKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKundennr.Location = new System.Drawing.Point(939, 730);
+            this.txtKundennr.Name = "txtKundennr";
+            this.txtKundennr.Size = new System.Drawing.Size(339, 26);
+            this.txtKundennr.TabIndex = 1;
             // 
-            // lblName
+            // lblKundennr
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(815, 733);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(94, 20);
-            this.lblName.TabIndex = 2;
-            this.lblName.Text = "Nachname:";
+            this.lblKundennr.AutoSize = true;
+            this.lblKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKundennr.Location = new System.Drawing.Point(815, 733);
+            this.lblKundennr.Name = "lblKundennr";
+            this.lblKundennr.Size = new System.Drawing.Size(110, 25);
+            this.lblKundennr.TabIndex = 2;
+            this.lblKundennr.Text = "KundenNr:";
             // 
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(1118, 777);
+            this.btnSearch.Location = new System.Drawing.Point(1118, 838);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(160, 37);
             this.btnSearch.TabIndex = 3;
@@ -96,7 +98,7 @@ namespace PABuchungssystemSQL
             this.lblUeberschriftKunden.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUeberschriftKunden.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUeberschriftKunden.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblUeberschriftKunden.Location = new System.Drawing.Point(1, 19);
+            this.lblUeberschriftKunden.Location = new System.Drawing.Point(0, 24);
             this.lblUeberschriftKunden.Name = "lblUeberschriftKunden";
             this.lblUeberschriftKunden.Size = new System.Drawing.Size(1317, 49);
             this.lblUeberschriftKunden.TabIndex = 24;
@@ -125,19 +127,39 @@ namespace PABuchungssystemSQL
             this.btnAktualisieren.UseVisualStyleBackColor = true;
             this.btnAktualisieren.Click += new System.EventHandler(this.btnAktualisieren_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(815, 789);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 20);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Nachname:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(939, 786);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(339, 26);
+            this.textBox1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 954);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnAktualisieren);
             this.Controls.Add(this.btnLöschen);
             this.Controls.Add(this.lblUeberschriftKunden);
             this.Controls.Add(this.dgvKunden);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblKundennr);
+            this.Controls.Add(this.txtKundennr);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -151,14 +173,16 @@ namespace PABuchungssystemSQL
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtKundennr;
+        private System.Windows.Forms.Label lblKundennr;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.DataGridView dgvKunden;
         private System.Windows.Forms.Label lblUeberschriftKunden;
         private System.Windows.Forms.Button btnLöschen;
         private System.Windows.Forms.Button btnAktualisieren;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

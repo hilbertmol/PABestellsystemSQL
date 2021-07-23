@@ -128,10 +128,10 @@ namespace PABuchungssystemSQL
             this.lblUeberschriftBS.Name = "lblUeberschriftBS";
             this.lblUeberschriftBS.Size = new System.Drawing.Size(799, 49);
             this.lblUeberschriftBS.TabIndex = 25;
-            this.lblUeberschriftBS.Text = "Buchungssystem";
+            this.lblUeberschriftBS.Text = "Bestellsystem";
             this.lblUeberschriftBS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // FormLogin
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -145,7 +145,7 @@ namespace PABuchungssystemSQL
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLogin);
-            this.Name = "FormLogin";
+            this.Name = "frmLogin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

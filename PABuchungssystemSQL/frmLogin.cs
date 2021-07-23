@@ -30,8 +30,10 @@ namespace PABuchungssystemSQL
             if(dt.Rows.Count == 1)
             {
                 this.Hide();
-                Form1 frm1 = new Form1();
-                frm1.Show();
+                //frmKunden frmKunden = new frmKunden();
+                //frmKunden.Show();
+                frmBestellungen frmBestellungen= new frmBestellungen();
+                frmBestellungen.Show();
             }
             else
             {

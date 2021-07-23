@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace PABuchungssystemSQL
 {
-    public partial class Form1 : Form
+    public partial class frmKunden : Form
     {
-        public Form1()
+        public frmKunden()
         {
             InitializeComponent();
             UpdateBindingDSource();
@@ -25,8 +25,8 @@ namespace PABuchungssystemSQL
 
         private void UpdateBindingDSource()
         {
-            DataAccess dacc = new DataAccess();
-            dt = dacc.GetAllFromKunden();
+            string tableName = "kunden";
+            dt = DataAccess.GetAll(tableName);
             dgvKunden.DataSource = dt;
             dv = new DataView(dt);
         }
