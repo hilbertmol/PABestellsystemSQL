@@ -71,7 +71,6 @@ namespace PABuchungssystemSQL
                     SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
                     DataTable dt = new DataTable();
                     sqlDa.Fill(dt);
-                    sqlConn.Close();
                 }
             }
             catch (Exception ex)
@@ -140,7 +139,6 @@ namespace PABuchungssystemSQL
                     sqlDa.SelectCommand = cmd;
                     dt = new DataTable();
                     sqlDa.Fill(dt);
-                    sqlConn.Close();
                     dgvBestellungen.DataSource = dt;
                     dgvBestellungen.Refresh();
                 }

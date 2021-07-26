@@ -30,12 +30,14 @@ namespace PABuchungssystemSQL
             if(dt.Rows.Count == 1)
             {
                 this.Hide();
-                frmKunden frmK = new frmKunden();
-                frmK.Show();
+                //frmKunden frmK = new frmKunden();
+                //frmK.Show();
                 //frmBestellungen frmB= new frmBestellungen();
                 //frmB.Show();
                 //frmProdukte frmP = new frmProdukte();
                 //frmP.Show();
+                frmUebersicht frmU = new frmUebersicht();
+                frmU.Show();
             }
             else
             {

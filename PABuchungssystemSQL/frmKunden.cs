@@ -44,7 +44,6 @@ namespace PABuchungssystemSQL
                 using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
                 {
                     sqlConn.Open();
-                    cmd = new SqlCommand(cmdStr, sqlConn);
 
                     if (chkbKundennr.Checked)
                     {
@@ -68,7 +67,6 @@ namespace PABuchungssystemSQL
                     sqlDa.SelectCommand = cmd;
                     dt = new DataTable();
                     sqlDa.Fill(dt);
-                    sqlConn.Close();
                     dgvKunden.DataSource = dt;
                     dgvKunden.Refresh();
                 }

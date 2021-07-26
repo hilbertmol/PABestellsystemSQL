@@ -66,7 +66,6 @@ namespace PABuchungssystemSQL
                         SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
                         DataTable dt = new DataTable();
                         sqlDa.Fill(dt);
-                        sqlConn.Close();
                     }
                     drv.BeginEdit();
                     drv["bestellungsnr"] = txtBestellungsnr.Text;

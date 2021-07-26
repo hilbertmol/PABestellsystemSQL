@@ -35,11 +35,33 @@ namespace PABuchungssystemSQL
 
         private void GetDataCBox()
         {
-            for (int i = 0; i < dgvProdukte.Columns.Count; i++)
+            SqlDataAdapter sqlDa = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+            string kat = "";
+
+            try
             {
-                cmbKategorie.Items.Add(dgvProdukte.Columns[i].HeaderText);
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+                    cmdStr = "select kategorie from produkte";
+                    cmd = new SqlCommand(cmdStr, sqlConn);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while(reader.Read())
+                    {
+                        kat = reader["kategorie"].ToString();
+                        if(!cmbKategorie.Items.Contains(kat))
+                            cmbKategorie.Items.Add(kat);
+                    }                   
+                }
             }
-        }                    
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -79,7 +101,6 @@ namespace PABuchungssystemSQL
                     SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
                     DataTable dt = new DataTable();
                     sqlDa.Fill(dt);
-                    sqlConn.Close();
                 }
             }
             catch (Exception ex)
@@ -107,7 +128,6 @@ namespace PABuchungssystemSQL
                 using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
                 {
                     sqlConn.Open();
-                    cmd = new SqlCommand(cmdStr, sqlConn);
 
                     if (chkbProduktnr.Checked)
                     {
@@ -138,7 +158,6 @@ namespace PABuchungssystemSQL
                     sqlDa.SelectCommand = cmd;
                     dt = new DataTable();
                     sqlDa.Fill(dt);
-                    sqlConn.Close();
                     dgvProdukte.DataSource = dt;
                     dgvProdukte.Refresh();
                 }
