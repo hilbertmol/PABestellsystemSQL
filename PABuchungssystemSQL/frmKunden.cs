@@ -17,6 +17,7 @@ namespace PABuchungssystemSQL
         {
             InitializeComponent();
             UpdateBindingDSource();
+            chkbKundennr.Checked = true;
         }
 
         private DataTable dt = null;
@@ -33,7 +34,49 @@ namespace PABuchungssystemSQL
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            UpdateBindingDSource();
+            SqlDataAdapter sqlDa = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+                    cmd = new SqlCommand(cmdStr, sqlConn);
+
+                    if (chkbKundennr.Checked)
+                    {
+                        cmdStr = "select * from kunden where kundennr = @kundennr";
+                        cmd = new SqlCommand(cmdStr, sqlConn);
+                        cmd.Parameters.AddWithValue("@kundennr", txtKundennr.Text);
+                    }
+                    else if (chkbNachname.Checked)
+                    {
+                        cmdStr = "select * from kunden where nachname like @nachname";
+                        cmd = new SqlCommand(cmdStr, sqlConn);
+                        cmd.Parameters.AddWithValue("@nachname", txtNachname.Text + "%");
+                    }
+                    else
+                    {
+                        cmdStr = "select * from kunden";
+                        cmd = new SqlCommand(cmdStr, sqlConn);
+                    }
+
+                    //cmd.CommandType = CommandType.StoredProcedure;
+                    sqlDa.SelectCommand = cmd;
+                    dt = new DataTable();
+                    sqlDa.Fill(dt);
+                    sqlConn.Close();
+                    dgvKunden.DataSource = dt;
+                    dgvKunden.Refresh();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -46,14 +89,6 @@ namespace PABuchungssystemSQL
             UpdateBindingDSource();
         }
 
-        private void btnAktualisieren_Click(object sender, EventArgs e)
-        {
-            drv = dv[dgvKunden.CurrentRow.Index];
-            frmKundeBearbeiten frmB = new frmKundeBearbeiten();
-            frmB.EditKunde(drv);
-            frmB.Dispose();
-        }
-
         private void btnInsert_Click(object sender, EventArgs e)
         {
             drv = dv.AddNew();
@@ -61,6 +96,14 @@ namespace PABuchungssystemSQL
             frmB.EditKunde(drv);
             frmB.Dispose();
             dgvKunden.Refresh();
+        }
+
+        private void btnAktualisieren_Click(object sender, EventArgs e)
+        {
+            drv = dv[dgvKunden.CurrentRow.Index];
+            frmKundeBearbeiten frmB = new frmKundeBearbeiten();
+            frmB.EditKunde(drv);
+            frmB.Dispose();
         }
 
         private void btnLöschen_Click(object sender, EventArgs e)
@@ -83,6 +126,22 @@ namespace PABuchungssystemSQL
             }
             UpdateBindingDSource();
             dgvKunden.Refresh();
+        }
+
+        private void chkbKundennr_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbKundennr.Checked)
+            {
+                chkbNachname.Checked = false;
+            }
+        }
+
+        private void chkbNachname_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbNachname.Checked)
+            {
+                chkbKundennr.Checked = false;
+            }
         }
     } 
 }

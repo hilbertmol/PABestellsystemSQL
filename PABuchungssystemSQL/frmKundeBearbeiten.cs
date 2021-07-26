@@ -15,7 +15,7 @@ namespace PABuchungssystemSQL
     {
         public frmKundeBearbeiten()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -71,9 +71,9 @@ namespace PABuchungssystemSQL
                     else
                     {
                         sqlCmd = "update kunden set vorname = '" + txtVorname.Text + "' " +
-                                                ", nachname = '" + txtVorname.Text + "' " +
+                                                ", nachname = '" + txtNachname.Text + "' " +
                                                 ", email = '" + txtEmail.Text + "' " +
-                                                ", telefon = '" + txtEmail.Text + "' " +
+                                                ", telefon = '" + txtTelefon.Text + "' " +
                                                 ", strasse = '" + txtStrasse.Text + "' " +
                                                 ", hausnr = '" + txtHausnr.Text + "' " +
                                                 ", plz = '" + txtPlz.Text + "' " +

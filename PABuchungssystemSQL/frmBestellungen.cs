@@ -17,7 +17,8 @@ namespace PABuchungssystemSQL
         {
             InitializeComponent();
             UpdateBindingDSource();
-            dgvBestellungen.Columns["datum"].DefaultCellStyle.Format = "dd:MM:yyyy HH:mm:ss";
+            chkbBestellungsnr.Checked = true;
+            dgvBestellungen.Columns["datum"].DefaultCellStyle.Format = "dd.MM.yyyy HH:mm:ss";
         }
 
         private DataTable dt = null;
@@ -42,26 +43,21 @@ namespace PABuchungssystemSQL
             Application.Exit();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnInsert_Click(object sender, EventArgs e)
         {
-            UpdateBindingDSource();
+            drv = dv.AddNew();
+            frmBestellungBearbeiten frmBB = new frmBestellungBearbeiten();
+            frmBB.EditBestellung(drv);
+            frmBB.Dispose();
+            dgvBestellungen.Refresh();
         }
 
         private void btnAktualisieren_Click(object sender, EventArgs e)
         {
             drv = dv[dgvBestellungen.CurrentRow.Index];
             frmBestellungBearbeiten frmBB = new frmBestellungBearbeiten();
-            frmBB.EditKunde(drv);
+            frmBB.EditBestellung(drv);
             frmBB.Dispose();
-        }
-
-        private void btnInsert_Click(object sender, EventArgs e)
-        {
-            drv = dv.AddNew();
-            frmBestellungBearbeiten frmBB = new frmBestellungBearbeiten();
-            frmBB.EditKunde(drv);
-            frmBB.Dispose();
-            dgvBestellungen.Refresh();
         }
 
         private void btnLöschen_Click(object sender, EventArgs e)
@@ -91,5 +87,69 @@ namespace PABuchungssystemSQL
             Application.Exit();
         }
 
+        private void chkbBestellungsnr_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbBestellungsnr.Checked)
+            {
+                chkbDatum.Checked = false;
+            }
+        }
+
+        private void chkbDatum_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbDatum.Checked)
+            {
+                chkbBestellungsnr.Checked = false;
+            }
+        }
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+            SqlDataAdapter sqlDa = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+
+                    if (chkbBestellungsnr.Checked)
+                    {
+                        cmdStr = "select * from bestellungen where bestellungsnr = @bestellungsnr";
+                        cmd = new SqlCommand(cmdStr, sqlConn);
+                        cmd.Parameters.AddWithValue("@bestellungsnr", txtBestellungsnr.Text);
+                    }
+                    else if (chkbDatum.Checked)
+                    {
+                        cmdStr = "select * from bestellungen where datum between @datumstart and @datumend";
+                        cmd = new SqlCommand(cmdStr, sqlConn);
+                        cmd.Parameters.AddWithValue("@datumstart", dtpVon.Value.ToString("d")); //d: kurzes Datumsformat
+                        cmd.Parameters.AddWithValue("@datumend", dtpBis.Value.ToString("d")); //d: kurzes Datumsformat
+                    }
+                    else
+                    {
+                        cmdStr = "select * from bestellungen";
+                        cmd = new SqlCommand(cmdStr, sqlConn);
+                    }
+
+                    //cmd.CommandType = CommandType.StoredProcedure;
+
+                    sqlDa.SelectCommand = cmd;
+                    dt = new DataTable();
+                    sqlDa.Fill(dt);
+                    sqlConn.Close();
+                    dgvBestellungen.DataSource = dt;
+                    dgvBestellungen.Refresh();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

@@ -23,7 +23,7 @@ namespace PABuchungssystemSQL
             DialogResult = DialogResult.OK;
         }
 
-        public void EditKunde(DataRowView drv)
+        public void EditBestellung(DataRowView drv)
         {
             try
             {
@@ -89,6 +89,12 @@ namespace PABuchungssystemSQL
         private void btnAbbrechen_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
+        }
+
+        private void dtpBestellung_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime dt = dtpBestellungDate.Value.Date + dtpBestellungTime.Value.TimeOfDay;
+            txtDatum.Text = dt.ToString("dd.MM.yyyy HH:mm:ss");
         }
     }
 }
