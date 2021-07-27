@@ -18,11 +18,6 @@ namespace PABuchungssystemSQL
             InitializeComponent();
             UpdateBindingDSource();
             dgvBenutzer.MultiSelect = false;
-            lblLoginA.Text = dgvBenutzer.Rows[0].Cells["login"].Value.ToString();
-            lblVornameA.Text = dgvBenutzer.Rows[0].Cells["vorname"].Value.ToString();
-            lblNachnameA.Text = dgvBenutzer.Rows[0].Cells["nachname"].Value.ToString();
-            lblEmailA.Text = dgvBenutzer.Rows[0].Cells["email"].Value.ToString();
-            lblTypA.Text = dgvBenutzer.Rows[0].Cells["typ"].Value.ToString();
         }
 
         private DataTable dt = null;

@@ -17,6 +17,8 @@ namespace PABuchungssystemSQL
         {
             InitializeComponent();
             GetDataCBox();
+            txtPasswort.PasswordChar = '*';
+            txtPasswortW.PasswordChar = '*';
         }
 
         public void EditBenutzer(DataRowView drv)
@@ -124,12 +126,33 @@ namespace PABuchungssystemSQL
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.OK;
+            if (txtPasswort.Text == txtPasswortW.Text)
+            {
+                DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                MessageBox.Show("Passwort nicht gleich.");
+            }
         }
 
         private void btnAbbrechen_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
+        }
+
+        private void chkbPasswortEinblenden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbPasswortEinblenden.Checked)
+            {
+                txtPasswort.PasswordChar = '\0';
+                txtPasswortW.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPasswort.PasswordChar = '*';
+                txtPasswortW.PasswordChar = '*';
+            }
         }
     }
 }

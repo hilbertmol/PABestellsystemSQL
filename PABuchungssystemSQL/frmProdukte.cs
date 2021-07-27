@@ -152,8 +152,6 @@ namespace PABuchungssystemSQL
                         cmdStr = "select * from produkte";
                         cmd = new SqlCommand(cmdStr, sqlConn);
                     }
-
-
                     //cmd.CommandType = CommandType.StoredProcedure;
                     sqlDa.SelectCommand = cmd;
                     dt = new DataTable();

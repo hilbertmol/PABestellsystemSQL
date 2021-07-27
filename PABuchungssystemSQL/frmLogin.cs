@@ -20,30 +20,40 @@ namespace PABuchungssystemSQL
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("loginDB"));
-            string sqlCmd = "select * from userdata where login = '" + txtLogin.Text.Trim() + "' " +
-                "and passwort = '" + txtPassword.Text.Trim() + "'";
-            SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
+            SqlDataAdapter sqlDa = new SqlDataAdapter();
             DataTable dt = new DataTable();
-            sqlDa.Fill(dt);
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
 
-            if(dt.Rows.Count == 1)
+            using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("loginDB")))
             {
-                this.Hide();
-                //frmKunden frmK = new frmKunden();
-                //frmK.Show();
-                //frmBestellungen frmB= new frmBestellungen();
-                //frmB.Show();
-                //frmProdukte frmP = new frmProdukte();
-                //frmP.Show();
-                //frmUebersicht frmU = new frmUebersicht();
-                //frmU.Show();
-                frmBenutzerverwaltung frmBV = new frmBenutzerverwaltung();
-                frmBV.Show();
-            }
-            else
-            {
-                MessageBox.Show("Ungültige Login / Passwort", "Information");
+                cmdStr = "select * from userdata where login = @login collate latin1_general_cs_as and passwort = @passwort " +
+                    "collate latin1_general_cs_as";
+                cmd = new SqlCommand(cmdStr, sqlConn);
+                cmd.Parameters.AddWithValue("@login", txtLogin.Text);
+                cmd.Parameters.AddWithValue("@passwort", txtPassword.Text);
+                sqlDa.SelectCommand = cmd;
+                dt = new DataTable();
+                sqlDa.Fill(dt);
+
+                if (dt.Rows.Count == 1)
+                {
+                    this.Hide();
+                    //frmKunden frmK = new frmKunden();
+                    //frmK.Show();
+                    //frmBestellungen frmB= new frmBestellungen();
+                    //frmB.Show();
+                    //frmProdukte frmP = new frmProdukte();
+                    //frmP.Show();
+                    //frmUebersicht frmU = new frmUebersicht();
+                    //frmU.Show();
+                    frmBenutzerverwaltung frmBV = new frmBenutzerverwaltung();
+                    frmBV.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Ungültige Login / Passwort.", "Information");
+                }
             }
         }
 

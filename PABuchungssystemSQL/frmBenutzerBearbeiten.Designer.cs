@@ -45,12 +45,14 @@ namespace PABuchungssystemSQL
             this.lblPasswortW = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
             this.cmbKontotyp = new System.Windows.Forms.ComboBox();
+            this.chkbPasswortEinblenden = new System.Windows.Forms.CheckBox();
+            this.lblPassShow = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAbbrechen
             // 
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(443, 524);
+            this.btnAbbrechen.Location = new System.Drawing.Point(442, 559);
             this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAbbrechen.Name = "btnAbbrechen";
             this.btnAbbrechen.Size = new System.Drawing.Size(160, 37);
@@ -148,7 +150,7 @@ namespace PABuchungssystemSQL
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(263, 524);
+            this.btnOK.Location = new System.Drawing.Point(263, 559);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(160, 37);
@@ -204,11 +206,34 @@ namespace PABuchungssystemSQL
             this.cmbKontotyp.Size = new System.Drawing.Size(339, 28);
             this.cmbKontotyp.TabIndex = 63;
             // 
+            // chkbPasswortEinblenden
+            // 
+            this.chkbPasswortEinblenden.AutoSize = true;
+            this.chkbPasswortEinblenden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbPasswortEinblenden.Location = new System.Drawing.Point(453, 508);
+            this.chkbPasswortEinblenden.Name = "chkbPasswortEinblenden";
+            this.chkbPasswortEinblenden.Size = new System.Drawing.Size(18, 17);
+            this.chkbPasswortEinblenden.TabIndex = 65;
+            this.chkbPasswortEinblenden.UseVisualStyleBackColor = true;
+            this.chkbPasswortEinblenden.CheckedChanged += new System.EventHandler(this.chkbPasswortEinblenden_CheckedChanged);
+            // 
+            // lblPassShow
+            // 
+            this.lblPassShow.AutoSize = true;
+            this.lblPassShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassShow.Location = new System.Drawing.Point(259, 505);
+            this.lblPassShow.Name = "lblPassShow";
+            this.lblPassShow.Size = new System.Drawing.Size(169, 20);
+            this.lblPassShow.TabIndex = 64;
+            this.lblPassShow.Text = "Passwort einblenden:";
+            // 
             // frmBenutzerBearbeiten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 732);
+            this.Controls.Add(this.chkbPasswortEinblenden);
+            this.Controls.Add(this.lblPassShow);
             this.Controls.Add(this.cmbKontotyp);
             this.Controls.Add(this.btnAbbrechen);
             this.Controls.Add(this.lblKontotyp);
@@ -252,5 +277,7 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.Label lblPasswortW;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.ComboBox cmbKontotyp;
+        private System.Windows.Forms.CheckBox chkbPasswortEinblenden;
+        private System.Windows.Forms.Label lblPassShow;
     }
 }

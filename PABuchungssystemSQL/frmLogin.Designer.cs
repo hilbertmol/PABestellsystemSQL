@@ -93,9 +93,9 @@ namespace PABuchungssystemSQL
             this.lblPassShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassShow.Location = new System.Drawing.Point(125, 298);
             this.lblPassShow.Name = "lblPassShow";
-            this.lblPassShow.Size = new System.Drawing.Size(164, 20);
+            this.lblPassShow.Size = new System.Drawing.Size(211, 25);
             this.lblPassShow.TabIndex = 5;
-            this.lblPassShow.Text = "Passwort einblenden";
+            this.lblPassShow.Text = "Passwort einblenden:";
             // 
             // chkbPasswortEinblenden
             // 
