@@ -28,14 +28,9 @@ namespace PABuchungssystemSQL
         private void UpdateBindingDSource()
         {
             string tableName = "bestellungen";
-            dt = DataAccess.GetAll(tableName);
+            dt = DataAccess.GetAllManagementDB(tableName);
             dgvBestellungen.DataSource = dt;
             dv = new DataView(dt);
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            UpdateBindingDSource();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -102,7 +97,7 @@ namespace PABuchungssystemSQL
             }
         }
 
-        private void btnSearch_Click_1(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             SqlDataAdapter sqlDa = new SqlDataAdapter();
             DataTable dt = new DataTable();
@@ -147,7 +142,6 @@ namespace PABuchungssystemSQL
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
     }
 }

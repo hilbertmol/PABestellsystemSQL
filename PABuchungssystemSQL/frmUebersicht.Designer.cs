@@ -43,8 +43,6 @@ namespace PABuchungssystemSQL
             this.lblAnzahlPr = new System.Windows.Forms.Label();
             this.cmbGruppieren = new System.Windows.Forms.ComboBox();
             this.btnGruppieren = new System.Windows.Forms.Button();
-            this.lblStueckzahlA = new System.Windows.Forms.Label();
-            this.lblStueckzahl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKunden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBestellungen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdukte)).BeginInit();
@@ -190,7 +188,7 @@ namespace PABuchungssystemSQL
             this.cmbGruppieren.FormattingEnabled = true;
             this.cmbGruppieren.Location = new System.Drawing.Point(591, 695);
             this.cmbGruppieren.Name = "cmbGruppieren";
-            this.cmbGruppieren.Size = new System.Drawing.Size(179, 24);
+            this.cmbGruppieren.Size = new System.Drawing.Size(120, 24);
             this.cmbGruppieren.TabIndex = 50;
             // 
             // btnGruppieren
@@ -205,33 +203,11 @@ namespace PABuchungssystemSQL
             this.btnGruppieren.UseVisualStyleBackColor = true;
             this.btnGruppieren.Click += new System.EventHandler(this.btnGruppieren_Click);
             // 
-            // lblStueckzahlA
-            // 
-            this.lblStueckzahlA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStueckzahlA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStueckzahlA.Location = new System.Drawing.Point(667, 735);
-            this.lblStueckzahlA.Name = "lblStueckzahlA";
-            this.lblStueckzahlA.Size = new System.Drawing.Size(103, 27);
-            this.lblStueckzahlA.TabIndex = 53;
-            this.lblStueckzahlA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblStueckzahl
-            // 
-            this.lblStueckzahl.AutoSize = true;
-            this.lblStueckzahl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStueckzahl.Location = new System.Drawing.Point(588, 740);
-            this.lblStueckzahl.Name = "lblStueckzahl";
-            this.lblStueckzahl.Size = new System.Drawing.Size(73, 17);
-            this.lblStueckzahl.TabIndex = 52;
-            this.lblStueckzahl.Text = "Stückzahl:";
-            // 
             // frmUebersicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 775);
-            this.Controls.Add(this.lblStueckzahlA);
-            this.Controls.Add(this.lblStueckzahl);
             this.Controls.Add(this.btnGruppieren);
             this.Controls.Add(this.cmbGruppieren);
             this.Controls.Add(this.lblAnzahlPrA);
@@ -274,7 +250,5 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.Label lblAnzahlPr;
         private System.Windows.Forms.ComboBox cmbGruppieren;
         private System.Windows.Forms.Button btnGruppieren;
-        private System.Windows.Forms.Label lblStueckzahlA;
-        private System.Windows.Forms.Label lblStueckzahl;
     }
 }

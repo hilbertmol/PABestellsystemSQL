@@ -11,7 +11,7 @@ namespace PABuchungssystemSQL
 {
     public static class DataAccess
     {
-        public static DataTable GetAll(string tableName)
+        public static DataTable GetAllManagementDB(string tableName)
         {
             using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
             {
@@ -24,16 +24,17 @@ namespace PABuchungssystemSQL
             }
         }
 
-        public static void UpdateKunde()
+        public static DataTable GetAllLoginDB(string tableName)
         {
-                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
-                {
-                    sqlConn.Open();
-                    string sqlCmd = "update kunde set";
-                    SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
-                    DataTable dt = new DataTable();
-                    sqlDa.Fill(dt);
-                }
+            using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("LoginDB")))
+            {
+                sqlConn.Open();
+                string sqlCmd = "select * from " + tableName;
+                SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
+                DataTable dt = new DataTable();
+                sqlDa.Fill(dt);
+                return dt;
+            }
         }
     }
 }

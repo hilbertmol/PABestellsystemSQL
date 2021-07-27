@@ -51,7 +51,7 @@ namespace PABuchungssystemSQL
             // 
             this.btnAktualisieren.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAktualisieren.Location = new System.Drawing.Point(146, 597);
-            this.btnAktualisieren.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAktualisieren.Margin = new System.Windows.Forms.Padding(2);
             this.btnAktualisieren.Name = "btnAktualisieren";
             this.btnAktualisieren.Size = new System.Drawing.Size(120, 30);
             this.btnAktualisieren.TabIndex = 34;
@@ -63,7 +63,7 @@ namespace PABuchungssystemSQL
             // 
             this.btnLöschen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLöschen.Location = new System.Drawing.Point(284, 597);
-            this.btnLöschen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLöschen.Margin = new System.Windows.Forms.Padding(2);
             this.btnLöschen.Name = "btnLöschen";
             this.btnLöschen.Size = new System.Drawing.Size(120, 30);
             this.btnLöschen.TabIndex = 33;
@@ -89,7 +89,7 @@ namespace PABuchungssystemSQL
             this.dgvBestellungen.AllowUserToAddRows = false;
             this.dgvBestellungen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBestellungen.Location = new System.Drawing.Point(8, 79);
-            this.dgvBestellungen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvBestellungen.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBestellungen.Name = "dgvBestellungen";
             this.dgvBestellungen.RowHeadersWidth = 51;
             this.dgvBestellungen.RowTemplate.Height = 24;
@@ -100,7 +100,7 @@ namespace PABuchungssystemSQL
             // 
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.Location = new System.Drawing.Point(8, 597);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(120, 30);
             this.btnInsert.TabIndex = 30;
@@ -112,13 +112,13 @@ namespace PABuchungssystemSQL
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(726, 712);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(120, 30);
             this.btnSearch.TabIndex = 29;
-            this.btnSearch.Text = "Search";
+            this.btnSearch.Text = "Suchen";
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblBestellungsnr
             // 
@@ -135,7 +135,7 @@ namespace PABuchungssystemSQL
             // 
             this.txtBestellungsnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBestellungsnr.Location = new System.Drawing.Point(658, 597);
-            this.txtBestellungsnr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBestellungsnr.Margin = new System.Windows.Forms.Padding(2);
             this.txtBestellungsnr.Name = "txtBestellungsnr";
             this.txtBestellungsnr.Size = new System.Drawing.Size(188, 23);
             this.txtBestellungsnr.TabIndex = 27;
@@ -231,7 +231,7 @@ namespace PABuchungssystemSQL
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.lblBestellungsnr);
             this.Controls.Add(this.txtBestellungsnr);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmBestellungen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bestellungen";

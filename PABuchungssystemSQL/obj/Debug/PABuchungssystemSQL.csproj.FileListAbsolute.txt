@@ -18,3 +18,5 @@ C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\P
 C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.pdb
 C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.csproj.AssemblyReference.cache
 C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.frmUebersicht.resources
+C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.frmBenutzerBearbeiten.resources
+C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.frmBenutzerverwaltung.resources

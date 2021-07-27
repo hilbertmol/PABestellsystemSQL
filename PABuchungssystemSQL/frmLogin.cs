@@ -22,7 +22,7 @@ namespace PABuchungssystemSQL
         {
             SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("loginDB"));
             string sqlCmd = "select * from userdata where login = '" + txtLogin.Text.Trim() + "' " +
-                "and password = '" + txtPassword.Text.Trim() + "'";
+                "and passwort = '" + txtPassword.Text.Trim() + "'";
             SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
             DataTable dt = new DataTable();
             sqlDa.Fill(dt);
@@ -36,8 +36,10 @@ namespace PABuchungssystemSQL
                 //frmB.Show();
                 //frmProdukte frmP = new frmProdukte();
                 //frmP.Show();
-                frmUebersicht frmU = new frmUebersicht();
-                frmU.Show();
+                //frmUebersicht frmU = new frmUebersicht();
+                //frmU.Show();
+                frmBenutzerverwaltung frmBV = new frmBenutzerverwaltung();
+                frmBV.Show();
             }
             else
             {

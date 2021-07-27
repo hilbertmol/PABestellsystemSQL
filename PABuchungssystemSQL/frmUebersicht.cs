@@ -31,20 +31,20 @@ namespace PABuchungssystemSQL
         private void UpdateBindingDSourceKund()
         {
             string tableName = "kunden";
-            dt = DataAccess.GetAll(tableName);
+            dt = DataAccess.GetAllManagementDB(tableName);
             dgvKunden.DataSource = dt;
         }
         private void UpdateBindingDSourceBestell()
         {
             string tableName = "bestellungen";
-            dt = DataAccess.GetAll(tableName);
+            dt = DataAccess.GetAllManagementDB(tableName);
             dgvBestellungen.DataSource = dt;
         }
 
         private void UpdateBindingDSourceProd()
         {
             string tableName = "produkte";
-            dt = DataAccess.GetAll(tableName);
+            dt = DataAccess.GetAllManagementDB(tableName);
             dgvProdukte.DataSource = dt;
         }
 
@@ -179,15 +179,6 @@ namespace PABuchungssystemSQL
                     dgvUebersicht.DataSource = dt;
                     dgvUebersicht.Refresh();
                 }
-
-                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
-                {
-                    sqlConn.Open();
-                    cmd = new SqlCommand("select count(*) from produkte", sqlConn);
-                    int cnt = (int)cmd.ExecuteScalar();                    
-                }
-
-
             }
             catch (Exception ex)
             {

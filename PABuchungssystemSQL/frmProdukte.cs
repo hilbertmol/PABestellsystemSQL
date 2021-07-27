@@ -28,7 +28,7 @@ namespace PABuchungssystemSQL
         private void UpdateBindingDSource()
         {
             string tableName = "produkte";
-            dt = DataAccess.GetAll(tableName);
+            dt = DataAccess.GetAllManagementDB(tableName);
             dgvProdukte.DataSource = dt;
             dv = new DataView(dt);
         }
