@@ -75,12 +75,6 @@
     <Compile Include="frmBestellungen.Designer.cs">
       <DependentUpon>frmBestellungen.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBildBearbeiten.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmBildBearbeiten.Designer.cs">
-      <DependentUpon>frmBildBearbeiten.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmKunden.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,9 +126,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBestellungen.resx">
       <DependentUpon>frmBestellungen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmBildBearbeiten.resx">
-      <DependentUpon>frmBildBearbeiten.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKundeBearbeiten.resx">
       <DependentUpon>frmKundeBearbeiten.cs</DependentUpon>

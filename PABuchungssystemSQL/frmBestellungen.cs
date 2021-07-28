@@ -44,7 +44,7 @@ namespace PABuchungssystemSQL
             frmBestellungBearbeiten frmBB = new frmBestellungBearbeiten();
             frmBB.EditBestellung(drv);
             frmBB.Dispose();
-            dgvBestellungen.Refresh();
+            UpdateBindingDSource();
         }
 
         private void btnAktualisieren_Click(object sender, EventArgs e)
@@ -53,6 +53,7 @@ namespace PABuchungssystemSQL
             frmBestellungBearbeiten frmBB = new frmBestellungBearbeiten();
             frmBB.EditBestellung(drv);
             frmBB.Dispose();
+            UpdateBindingDSource();
         }
 
         private void btnLöschen_Click(object sender, EventArgs e)

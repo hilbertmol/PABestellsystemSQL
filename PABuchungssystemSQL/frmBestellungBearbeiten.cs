@@ -25,6 +25,8 @@ namespace PABuchungssystemSQL
 
         public void EditBestellung(DataRowView drv)
         {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
             try
             {
                 if (drv.Row.RowState == DataRowState.Detached)
@@ -44,35 +46,32 @@ namespace PABuchungssystemSQL
 
                 if (this.ShowDialog() == DialogResult.OK)
                 {
-                    string sqlCmd = "";
+                    cmd = new SqlCommand();
+                    cmdStr = "";
+
                     if (drv.Row.RowState == DataRowState.Detached)
                     {
-                        sqlCmd = "insert into bestellungen values ('" + txtBestellungsnr.Text + "'" +
-                                                            ", '" + txtKundennr.Text + "'" +
-                                                            ", '" + txtProduktnr.Text + "'" +
-                                                            ", '" + txtDatum.Text + "')";
-
+                        cmdStr = "insert into bestellungen values (@bestellungsnr, @kundennr, @produktnr, @datum)";
                     }
                     else
                     {
-                        sqlCmd = "update bestellungen set kundennr = '" + txtKundennr.Text + "' " +
-                                                ", produktnr = '" + txtProduktnr.Text + "' " +
-                                                ", datum = '" + txtDatum.Text + "' " +
-                                                "where bestellungsnr = '" + txtBestellungsnr.Text + "'";
+                        cmdStr = "update bestellungen set kundennr = @kundennr" +
+                                                    ", produktnr = @produktnr" +
+                                                    ", datum = @datum" +
+                                                    " where bestellungsnr = @bestellungsnr";
                     }
                     using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
                     {
                         sqlConn.Open();
-                        SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
-                        DataTable dt = new DataTable();
-                        sqlDa.Fill(dt);
+                        cmd.Connection = sqlConn;
+                        cmd.CommandText = cmdStr;
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@bestellungsnr", txtBestellungsnr.Text);
+                        cmd.Parameters.AddWithValue("@kundennr", txtKundennr.Text);
+                        cmd.Parameters.AddWithValue("@produktnr", txtProduktnr.Text);
+                        cmd.Parameters.AddWithValue("@datum", txtDatum.Text);
+                        cmd.ExecuteNonQuery();
                     }
-                    drv.BeginEdit();
-                    drv["bestellungsnr"] = txtBestellungsnr.Text;
-                    drv["kundennr"] = txtKundennr.Text;
-                    drv["produktnr"] = txtProduktnr.Text;
-                    drv["datum"] = txtDatum.Text;
-                    drv.EndEdit();
                 }
                 else
                 {

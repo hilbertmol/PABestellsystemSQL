@@ -18,6 +18,8 @@ namespace PABuchungssystemSQL
             InitializeComponent();
             UpdateBindingDSource();
             chkbProduktnr.Checked = true;
+            dgvProdukte.Columns["pfad"].Visible = false;
+            dgvProdukte.Columns["image"].Visible = false;
             GetDataCBox();
         }
 
@@ -79,7 +81,7 @@ namespace PABuchungssystemSQL
             frmProduktBearbeiten frmPB = new frmProduktBearbeiten();
             frmPB.EditProdukt(drv);
             frmPB.Dispose();
-            dgvProdukte.Refresh();
+            UpdateBindingDSource();
         }
 
         private void btnAktualisieren_Click(object sender, EventArgs e)
@@ -88,6 +90,7 @@ namespace PABuchungssystemSQL
             frmProduktBearbeiten frmPB = new frmProduktBearbeiten();
             frmPB.EditProdukt(drv);
             frmPB.Dispose();
+            UpdateBindingDSource();
         }
 
         private void btnLöschen_Click(object sender, EventArgs e)

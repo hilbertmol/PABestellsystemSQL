@@ -38,7 +38,7 @@ namespace PABuchungssystemSQL
             frmBenutzerBearbeiten frmBB = new frmBenutzerBearbeiten();
             frmBB.EditBenutzer(drv);
             frmBB.Dispose();
-            dgvBenutzer.Refresh();
+            UpdateBindingDSource();
         }
 
         private void btnAktualisieren_Click(object sender, EventArgs e)
@@ -47,6 +47,7 @@ namespace PABuchungssystemSQL
             frmBenutzerBearbeiten frmBB = new frmBenutzerBearbeiten();
             frmBB.EditBenutzer(drv);
             frmBB.Dispose();
+            UpdateBindingDSource();
         }
 
         private void btnLöschen_Click(object sender, EventArgs e)

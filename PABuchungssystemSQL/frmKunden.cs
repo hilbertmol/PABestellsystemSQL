@@ -93,7 +93,7 @@ namespace PABuchungssystemSQL
             frmKundeBearbeiten frmB = new frmKundeBearbeiten();
             frmB.EditKunde(drv);
             frmB.Dispose();
-            dgvKunden.Refresh();
+            UpdateBindingDSource();
         }
 
         private void btnAktualisieren_Click(object sender, EventArgs e)
@@ -102,6 +102,7 @@ namespace PABuchungssystemSQL
             frmKundeBearbeiten frmB = new frmKundeBearbeiten();
             frmB.EditKunde(drv);
             frmB.Dispose();
+            UpdateBindingDSource();
         }
 
         private void btnLöschen_Click(object sender, EventArgs e)

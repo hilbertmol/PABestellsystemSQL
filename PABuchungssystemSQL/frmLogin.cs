@@ -41,14 +41,14 @@ namespace PABuchungssystemSQL
                     this.Hide();
                     //frmKunden frmK = new frmKunden();
                     //frmK.Show();
-                    //frmBestellungen frmB= new frmBestellungen();
-                    //frmB.Show();
+                    frmBestellungen frmB= new frmBestellungen();
+                    frmB.Show();
                     //frmProdukte frmP = new frmProdukte();
                     //frmP.Show();
                     //frmUebersicht frmU = new frmUebersicht();
                     //frmU.Show();
-                    frmBenutzerverwaltung frmBV = new frmBenutzerverwaltung();
-                    frmBV.Show();
+                    //frmBenutzerverwaltung frmBV = new frmBenutzerverwaltung();
+                    //frmBV.Show();
                 }
                 else
                 {

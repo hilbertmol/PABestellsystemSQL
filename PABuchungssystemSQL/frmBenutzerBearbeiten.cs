@@ -23,6 +23,8 @@ namespace PABuchungssystemSQL
 
         public void EditBenutzer(DataRowView drv)
         {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
             try
             {
                 if (drv.Row.RowState == DataRowState.Detached)
@@ -48,40 +50,37 @@ namespace PABuchungssystemSQL
 
                 if (this.ShowDialog() == DialogResult.OK)
                 {
-                    string sqlCmd = "";
+                    cmd = new SqlCommand();
+                    cmdStr = "";
+
                     if (drv.Row.RowState == DataRowState.Detached)
                     {
-                        sqlCmd = "insert into userdata values ('" + txtLogin.Text + "'" +
-                                                            ", '" + txtPasswort.Text + "'" +
-                                                            ", '" + txtVorname.Text + "'" +
-                                                            ", '" + txtNachname.Text + "'" +
-                                                            ", '" + txtEmail.Text + "'" +
-                                                            ", '" + cmbKontotyp.SelectedItem.ToString() + "')";
-
+                        cmdStr = "insert into userdata values (@login, @passwort, @vorname, @nachname, " +
+                        "@email, @typ)";
                     }
                     else
                     {
-                        sqlCmd = "update userdata set passwort = '" + txtPasswort.Text + "' " +
-                                                        ", vorname = '" + txtVorname.Text + "' " +
-                                                        ", nachname = '" + txtNachname.Text + "' " +
-                                                        ", email = '" + txtEmail.Text + "' " +
-                                                        ", typ = '" + cmbKontotyp.SelectedItem.ToString() + "' " +
-                                                        "where login = '" + txtLogin.Text + "'";
+                        cmdStr = "update userdata set passwort = @passwort" +
+                                                    ", vorname = @vorname" +
+                                                    ", nachname = @nachname" +
+                                                    ", email = @email" +
+                                                    ", typ = @typ" +
+                                                    " where login = @login";
                     }
                     using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("loginDB")))
                     {
                         sqlConn.Open();
-                        SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
-                        DataTable dt = new DataTable();
-                        sqlDa.Fill(dt);
+                        cmd.Connection = sqlConn;
+                        cmd.CommandText = cmdStr;
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@login", txtLogin.Text);
+                        cmd.Parameters.AddWithValue("@passwort", txtPasswort.Text);
+                        cmd.Parameters.AddWithValue("@vorname", txtVorname.Text);
+                        cmd.Parameters.AddWithValue("@nachname", txtNachname.Text);
+                        cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@typ", cmbKontotyp.SelectedItem.ToString());
+                        cmd.ExecuteNonQuery();
                     }
-                    drv["login"] = txtLogin.Text; ;
-                    drv["passwort"] = txtPasswort.Text;
-                    drv["vorname"] = txtVorname.Text;
-                    drv["nachname"] = txtNachname.Text;
-                    drv["email"] = txtEmail.Text;
-                    drv["typ"] = cmbKontotyp.SelectedItem;
-                    drv.EndEdit();
                 }
                 else
                 {

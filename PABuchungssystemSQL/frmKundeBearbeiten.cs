@@ -25,6 +25,8 @@ namespace PABuchungssystemSQL
 
         public void EditKunde(DataRowView drv)
         {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
             try
             {
                 if (drv.Row.RowState == DataRowState.Detached)
@@ -54,50 +56,43 @@ namespace PABuchungssystemSQL
 
                 if (this.ShowDialog() == DialogResult.OK)
                 {
-                    string sqlCmd = "";
+                    cmd = new SqlCommand();
+                    cmdStr = "";
+
                     if (drv.Row.RowState == DataRowState.Detached)
                     {
-                        sqlCmd = "insert into kunden values ('" + txtKundennr.Text + "'" +
-                                                            ", '" + txtVorname.Text + "'" +
-                                                            ", '" + txtNachname.Text + "'" +
-                                                            ", '" + txtEmail.Text + "'" +
-                                                            ", '" + txtTelefon.Text + "'" +
-                                                            ", '" + txtStrasse.Text + "'" +
-                                                            ", '" + txtHausnr.Text + "'" +
-                                                            ", '" + txtPlz.Text + "'" +
-                                                            ", '" + txtOrt.Text + "')";
-
+                        cmdStr = "insert into kunden values (@kundennr, @vorname, @nachname, @email, " +
+                        "@telefon, @strasse, @hausnr, @plz, @ort)";
                     }
                     else
                     {
-                        sqlCmd = "update kunden set vorname = '" + txtVorname.Text + "' " +
-                                                ", nachname = '" + txtNachname.Text + "' " +
-                                                ", email = '" + txtEmail.Text + "' " +
-                                                ", telefon = '" + txtTelefon.Text + "' " +
-                                                ", strasse = '" + txtStrasse.Text + "' " +
-                                                ", hausnr = '" + txtHausnr.Text + "' " +
-                                                ", plz = '" + txtPlz.Text + "' " +
-                                                ", ort = '" + txtOrt.Text + "' " +
-                                                "where kundennr = '" + txtKundennr.Text + "'";
+                        cmdStr = "update kunden set vorname = @vorname" +
+                                                    ", nachname = @nachname" +
+                                                    ", email = @email" +
+                                                    ", telefon = @telefon" +
+                                                    ", strasse = @strasse" +
+                                                    ", hausnr = @hausnr" +
+                                                    ", plz = @plz" +
+                                                    ", ort = @ort" +
+                                                    " where kundennr = @kundennr";
                     }
                     using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
                     {
                         sqlConn.Open();
-                        SqlDataAdapter sqlDa = new SqlDataAdapter(sqlCmd, sqlConn);
-                        DataTable dt = new DataTable();
-                        sqlDa.Fill(dt);
+                        cmd.Connection = sqlConn;
+                        cmd.CommandText = cmdStr;
+                        cmd.CommandType = CommandType.Text;
+                        cmd.Parameters.AddWithValue("@kundennr", txtKundennr.Text);
+                        cmd.Parameters.AddWithValue("@vorname", txtVorname.Text);
+                        cmd.Parameters.AddWithValue("@nachname", txtNachname.Text);
+                        cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@telefon", txtTelefon.Text);
+                        cmd.Parameters.AddWithValue("@strasse", txtStrasse.Text);
+                        cmd.Parameters.AddWithValue("@hausnr", txtHausnr.Text);
+                        cmd.Parameters.AddWithValue("@plz", txtPlz.Text);
+                        cmd.Parameters.AddWithValue("@ort", txtOrt.Text);
+                        cmd.ExecuteNonQuery();
                     }
-                    drv.BeginEdit();
-                    drv["kundennr"] = txtKundennr.Text;
-                    drv["vorname"] = txtVorname.Text;
-                    drv["nachname"] = txtNachname.Text;
-                    drv["email"] = txtEmail.Text;
-                    drv["telefon"] = txtTelefon.Text;
-                    drv["strasse"] = txtStrasse.Text;
-                    drv["hausnr"] = txtHausnr.Text;
-                    drv["plz"] = txtPlz.Text;
-                    drv["ort"] = txtOrt.Text;
-                    drv.EndEdit();
                 }
                 else
                 {
