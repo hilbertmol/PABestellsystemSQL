@@ -112,7 +112,6 @@
       <DependentUpon>frmHauptmenue.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
-    <Compile Include="Kunde.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

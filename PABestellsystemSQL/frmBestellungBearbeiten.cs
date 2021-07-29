@@ -18,6 +18,8 @@ namespace PABestellsystemSQL
             InitializeComponent();
         }
 
+        private string produktnrAlt = "";
+
         private void btnOK_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
@@ -42,6 +44,7 @@ namespace PABestellsystemSQL
                     txtKundennr.Text = drv["kundennr"].ToString();
                     txtProduktnr.Text = drv["produktnr"].ToString();
                     txtDatum.Text = drv["datum"].ToString();
+                    produktnrAlt = txtProduktnr.Text;
                 }
 
                 if (this.ShowDialog() == DialogResult.OK)
@@ -72,6 +75,8 @@ namespace PABestellsystemSQL
                         cmd.Parameters.AddWithValue("@datum", txtDatum.Text);
                         cmd.ExecuteNonQuery();
                     }
+                    UpdateStueckzahlAdd(produktnrAlt, GetStueckzahl(produktnrAlt));
+                    UpdateStueckzahlSub(txtProduktnr.Text, GetStueckzahl(txtProduktnr.Text));
                 }
                 else
                 {
@@ -93,6 +98,81 @@ namespace PABestellsystemSQL
         {
             DateTime dt = dtpBestellungDate.Value.Date + dtpBestellungTime.Value.TimeOfDay;
             txtDatum.Text = dt.ToString("dd.MM.yyyy HH:mm:ss");
+        }
+
+        private int GetStueckzahl(string produktnr)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+                    cmd.Connection = sqlConn;
+                    cmdStr = "select stueckzahl from produkte where produktnr = @produktnr";
+                    cmd.CommandText = cmdStr;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@produktnr", produktnr);
+                    int cnt = (int)cmd.ExecuteScalar();
+                    return cnt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        private void UpdateStueckzahlSub(string produktnr, int stueckzahl)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+                    cmd.Connection = sqlConn;
+                    cmdStr = "update produkte set stueckzahl = @stueckzahl" +
+                                                    " where produktnr = @produktnr";
+                    cmd.CommandText = cmdStr;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@stueckzahl", --stueckzahl);
+                    cmd.Parameters.AddWithValue("@produktnr", produktnr);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void UpdateStueckzahlAdd(string produktnr, int stueckzahl)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+                    cmd.Connection = sqlConn;
+                    cmdStr = "update produkte set stueckzahl = @stueckzahl" +
+                                                    " where produktnr = @produktnr";
+                    cmd.CommandText = cmdStr;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@stueckzahl", ++stueckzahl);
+                    cmd.Parameters.AddWithValue("@produktnr", produktnr);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

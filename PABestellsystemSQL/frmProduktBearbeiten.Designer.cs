@@ -170,6 +170,7 @@ namespace PABestellsystemSQL
             this.txtPreis.Name = "txtPreis";
             this.txtPreis.Size = new System.Drawing.Size(421, 26);
             this.txtPreis.TabIndex = 47;
+            this.txtPreis.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPreis_KeyUp);
             // 
             // txtProduktnr
             // 
@@ -247,7 +248,7 @@ namespace PABestellsystemSQL
             this.picProdukt.Margin = new System.Windows.Forms.Padding(5);
             this.picProdukt.Name = "picProdukt";
             this.picProdukt.Padding = new System.Windows.Forms.Padding(5);
-            this.picProdukt.Size = new System.Drawing.Size(230, 230);
+            this.picProdukt.Size = new System.Drawing.Size(305, 230);
             this.picProdukt.TabIndex = 63;
             this.picProdukt.TabStop = false;
             // 

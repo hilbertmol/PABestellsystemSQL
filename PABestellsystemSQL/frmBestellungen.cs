@@ -60,6 +60,7 @@ namespace PABestellsystemSQL
 
         private void btnLöschen_Click(object sender, EventArgs e)
         {
+            string produktnr = dgvBestellungen.CurrentRow.Cells["produktnr"].Value.ToString();
             try
             {
                 using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
@@ -70,13 +71,14 @@ namespace PABestellsystemSQL
                     DataTable dt = new DataTable();
                     sqlDa.Fill(dt);
                 }
+                UpdateStueckzahl(produktnr, GetStueckzahl(produktnr));
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             UpdateBindingDSource();
-            dgvBestellungen.Refresh();
+            //dgvBestellungen.Refresh();
         }
 
         private void frmBestellungen_FormClosing(object sender, FormClosingEventArgs e)
@@ -148,6 +150,56 @@ namespace PABestellsystemSQL
             this.Hide();
             frmHauptmenue fH = new frmHauptmenue();
             fH.Show();
+        }
+
+        private int GetStueckzahl(string produktnr)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+                    cmd.Connection = sqlConn;
+                    cmdStr = "select stueckzahl from produkte where produktnr = @produktnr";
+                    cmd.CommandText = cmdStr;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@produktnr", produktnr);
+                    int cnt = (int)cmd.ExecuteScalar();
+                    return cnt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        private void UpdateStueckzahl(string produktnr, int stueckzahl)
+        {
+            SqlCommand cmd = new SqlCommand();
+            string cmdStr = "";
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
+                {
+                    sqlConn.Open();
+                    cmd.Connection = sqlConn;
+                    cmdStr = "update produkte set stueckzahl = @stueckzahl" +
+                                                    " where produktnr = @produktnr";
+                    cmd.CommandText = cmdStr;
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@stueckzahl", ++stueckzahl);
+                    cmd.Parameters.AddWithValue("@produktnr", produktnr);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

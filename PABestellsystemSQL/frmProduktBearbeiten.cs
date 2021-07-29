@@ -166,5 +166,11 @@ namespace PABestellsystemSQL
                 }
             }
         }
+
+        private void txtPreis_KeyUp(object sender, KeyEventArgs e)
+        {
+            string str = txtPreis.Text;
+            txtPreis.Text = str.Replace('.', ',');
+        }
     }
 }
