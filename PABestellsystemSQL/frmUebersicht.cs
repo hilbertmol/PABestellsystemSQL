@@ -16,31 +16,39 @@ namespace PABestellsystemSQL
         public frmUebersicht()
         {
             InitializeComponent();
-            UpdateBindingDSourceKund();
+            UpdateBindingDSourceKunden();
             UpdateBindingDSourceBestell();
             UpdateBindingDSourceProd();
             lblAnzKA.Text = AnzahlKunden().ToString();
             lblSummeA.Text = SummeBestell().ToString("c");
             lblAnzahlPrA.Text = AnzahlProdukte().ToString();
+            //Combobox mit Kriterien belgen
             cmbGruppieren.Items.Add("kundennr");
             cmbGruppieren.Items.Add("hersteller");
+            cmbGruppieren.SelectedItem = cmbGruppieren.Items[0];
             dgvProdukte.Columns["pfad"].Visible = false;
             dgvProdukte.Columns["image"].Visible = false;
         }
 
         private DataTable dt = null;
 
-        private void UpdateBindingDSourceKund()
+        private void UpdateBindingDSourceKunden()
         {
             string tableName = "kunden";
             dt = DataAccess.GetAllManagementDB(tableName);
             dgvKunden.DataSource = dt;
+            //Breite von Zellen anpassen
+            dgvKunden.AutoResizeColumns();
+            dgvKunden.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         private void UpdateBindingDSourceBestell()
         {
             string tableName = "bestellungen";
             dt = DataAccess.GetAllManagementDB(tableName);
             dgvBestellungen.DataSource = dt;
+            //Breite von Zellen anpassen
+            dgvBestellungen.AutoResizeColumns();
+            dgvBestellungen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void UpdateBindingDSourceProd()
@@ -48,6 +56,9 @@ namespace PABestellsystemSQL
             string tableName = "produkte";
             dt = DataAccess.GetAllManagementDB(tableName);
             dgvProdukte.DataSource = dt;
+            //Breite von Zellen anpassen
+            dgvProdukte.AutoResizeColumns();
+            dgvProdukte.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private int AnzahlKunden()

@@ -31,6 +31,8 @@ namespace PABestellsystemSQL
             dt = DataAccess.GetAllManagementDB(tableName);
             dgvBestellungen.DataSource = dt;
             dv = new DataView(dt);
+            dgvBestellungen.AutoResizeColumns();
+            dgvBestellungen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -129,9 +131,6 @@ namespace PABestellsystemSQL
                         cmdStr = "select * from bestellungen";
                         cmd = new SqlCommand(cmdStr, sqlConn);
                     }
-
-                    //cmd.CommandType = CommandType.StoredProcedure;
-
                     sqlDa.SelectCommand = cmd;
                     dt = new DataTable();
                     sqlDa.Fill(dt);
@@ -144,7 +143,6 @@ namespace PABestellsystemSQL
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnZurück_Click(object sender, EventArgs e)
         {
             this.Hide();

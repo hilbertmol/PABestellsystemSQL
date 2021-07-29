@@ -42,6 +42,7 @@ namespace PABestellsystemSQL
             // 
             // txtLogin
             // 
+            this.txtLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Location = new System.Drawing.Point(226, 171);
             this.txtLogin.Name = "txtLogin";
@@ -50,6 +51,7 @@ namespace PABestellsystemSQL
             // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(226, 220);
             this.txtPassword.Name = "txtPassword";
@@ -58,6 +60,7 @@ namespace PABestellsystemSQL
             // 
             // lblLogin
             // 
+            this.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.Location = new System.Drawing.Point(125, 177);
@@ -68,6 +71,7 @@ namespace PABestellsystemSQL
             // 
             // lblPassword
             // 
+            this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(125, 226);
@@ -78,6 +82,7 @@ namespace PABestellsystemSQL
             // 
             // btnLogin
             // 
+            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(575, 171);
             this.btnLogin.Name = "btnLogin";
@@ -89,6 +94,7 @@ namespace PABestellsystemSQL
             // 
             // lblPassShow
             // 
+            this.lblPassShow.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPassShow.AutoSize = true;
             this.lblPassShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassShow.Location = new System.Drawing.Point(125, 298);
@@ -99,6 +105,7 @@ namespace PABestellsystemSQL
             // 
             // chkbPasswortEinblenden
             // 
+            this.chkbPasswortEinblenden.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkbPasswortEinblenden.AutoSize = true;
             this.chkbPasswortEinblenden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkbPasswortEinblenden.Location = new System.Drawing.Point(324, 301);
@@ -110,6 +117,7 @@ namespace PABestellsystemSQL
             // 
             // btnBeenden
             // 
+            this.btnBeenden.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBeenden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBeenden.Location = new System.Drawing.Point(575, 244);
             this.btnBeenden.Name = "btnBeenden";
@@ -121,6 +129,8 @@ namespace PABestellsystemSQL
             // 
             // lblUeberschriftBS
             // 
+            this.lblUeberschriftBS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUeberschriftBS.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUeberschriftBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUeberschriftBS.ForeColor = System.Drawing.SystemColors.ControlLightLight;

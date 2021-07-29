@@ -52,6 +52,7 @@ namespace PABestellsystemSQL
             // 
             // btnAbbrechen
             // 
+            this.btnAbbrechen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbbrechen.Location = new System.Drawing.Point(433, 598);
             this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -64,6 +65,7 @@ namespace PABestellsystemSQL
             // 
             // lblKontotyp
             // 
+            this.lblKontotyp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblKontotyp.AutoSize = true;
             this.lblKontotyp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKontotyp.Location = new System.Drawing.Point(130, 486);
@@ -74,6 +76,7 @@ namespace PABestellsystemSQL
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(254, 432);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -83,6 +86,7 @@ namespace PABestellsystemSQL
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(130, 435);
@@ -93,6 +97,7 @@ namespace PABestellsystemSQL
             // 
             // txtNachname
             // 
+            this.txtNachname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNachname.Location = new System.Drawing.Point(254, 380);
             this.txtNachname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -102,6 +107,7 @@ namespace PABestellsystemSQL
             // 
             // lblNachname
             // 
+            this.lblNachname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNachname.AutoSize = true;
             this.lblNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNachname.Location = new System.Drawing.Point(130, 382);
@@ -112,6 +118,7 @@ namespace PABestellsystemSQL
             // 
             // txtVorname
             // 
+            this.txtVorname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVorname.Location = new System.Drawing.Point(254, 326);
             this.txtVorname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -121,6 +128,7 @@ namespace PABestellsystemSQL
             // 
             // lblVorname
             // 
+            this.lblVorname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblVorname.AutoSize = true;
             this.lblVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVorname.Location = new System.Drawing.Point(130, 328);
@@ -131,6 +139,7 @@ namespace PABestellsystemSQL
             // 
             // txtPasswort
             // 
+            this.txtPasswort.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswort.Location = new System.Drawing.Point(254, 206);
             this.txtPasswort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -140,6 +149,7 @@ namespace PABestellsystemSQL
             // 
             // lblPasswort
             // 
+            this.lblPasswort.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPasswort.AutoSize = true;
             this.lblPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPasswort.Location = new System.Drawing.Point(130, 210);
@@ -150,6 +160,7 @@ namespace PABestellsystemSQL
             // 
             // btnOK
             // 
+            this.btnOK.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Location = new System.Drawing.Point(254, 598);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -162,6 +173,7 @@ namespace PABestellsystemSQL
             // 
             // txtPasswortW
             // 
+            this.txtPasswortW.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPasswortW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswortW.Location = new System.Drawing.Point(254, 270);
             this.txtPasswortW.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -171,6 +183,7 @@ namespace PABestellsystemSQL
             // 
             // txtLogin
             // 
+            this.txtLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Location = new System.Drawing.Point(254, 153);
             this.txtLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -180,6 +193,7 @@ namespace PABestellsystemSQL
             // 
             // lblPasswortW
             // 
+            this.lblPasswortW.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPasswortW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPasswortW.Location = new System.Drawing.Point(130, 257);
             this.lblPasswortW.Name = "lblPasswortW";
@@ -189,6 +203,7 @@ namespace PABestellsystemSQL
             // 
             // lblLogin
             // 
+            this.lblLogin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.Location = new System.Drawing.Point(130, 157);
@@ -199,6 +214,7 @@ namespace PABestellsystemSQL
             // 
             // cmbKontotyp
             // 
+            this.cmbKontotyp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbKontotyp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbKontotyp.FormattingEnabled = true;
             this.cmbKontotyp.Location = new System.Drawing.Point(254, 482);
@@ -209,6 +225,7 @@ namespace PABestellsystemSQL
             // 
             // chkbPasswortEinblenden
             // 
+            this.chkbPasswortEinblenden.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkbPasswortEinblenden.AutoSize = true;
             this.chkbPasswortEinblenden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkbPasswortEinblenden.Location = new System.Drawing.Point(444, 547);
@@ -220,6 +237,7 @@ namespace PABestellsystemSQL
             // 
             // lblPassShow
             // 
+            this.lblPassShow.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPassShow.AutoSize = true;
             this.lblPassShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassShow.Location = new System.Drawing.Point(250, 544);
@@ -230,6 +248,8 @@ namespace PABestellsystemSQL
             // 
             // lblBenutzerbearbeiten
             // 
+            this.lblBenutzerbearbeiten.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBenutzerbearbeiten.BackColor = System.Drawing.Color.SteelBlue;
             this.lblBenutzerbearbeiten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBenutzerbearbeiten.ForeColor = System.Drawing.SystemColors.ControlLightLight;

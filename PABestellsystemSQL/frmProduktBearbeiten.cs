@@ -53,7 +53,6 @@ namespace PABestellsystemSQL
                     txtHersteller.Text = drv["hersteller"].ToString();
                     txtKategorie.Text = drv["kategorie"].ToString();
                     txtStueckzahl.Text = drv["stueckzahl"].ToString();
-                    txtPfad.Text = drv["pfad"].ToString();
 
                     //Bild laden aus der Datenbank
 

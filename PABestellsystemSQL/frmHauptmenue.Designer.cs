@@ -44,6 +44,7 @@ namespace PABestellsystemSQL
             // 
             // btnUebersicht
             // 
+            this.btnUebersicht.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnUebersicht.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUebersicht.Location = new System.Drawing.Point(515, 326);
             this.btnUebersicht.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -56,6 +57,7 @@ namespace PABestellsystemSQL
             // 
             // btnKunden
             // 
+            this.btnKunden.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnKunden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKunden.Location = new System.Drawing.Point(515, 394);
             this.btnKunden.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -68,6 +70,7 @@ namespace PABestellsystemSQL
             // 
             // btnBestellungen
             // 
+            this.btnBestellungen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBestellungen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBestellungen.Location = new System.Drawing.Point(515, 462);
             this.btnBestellungen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -80,6 +83,7 @@ namespace PABestellsystemSQL
             // 
             // btnProdukte
             // 
+            this.btnProdukte.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnProdukte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdukte.Location = new System.Drawing.Point(515, 532);
             this.btnProdukte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -92,6 +96,7 @@ namespace PABestellsystemSQL
             // 
             // btnBenutzerverwaltung
             // 
+            this.btnBenutzerverwaltung.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBenutzerverwaltung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBenutzerverwaltung.Location = new System.Drawing.Point(515, 601);
             this.btnBenutzerverwaltung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -104,6 +109,8 @@ namespace PABestellsystemSQL
             // 
             // lblUeberschriftProdukte
             // 
+            this.lblUeberschriftProdukte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUeberschriftProdukte.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUeberschriftProdukte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUeberschriftProdukte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -165,6 +172,7 @@ namespace PABestellsystemSQL
             // 
             // btnBeenden
             // 
+            this.btnBeenden.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnBeenden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBeenden.Location = new System.Drawing.Point(12, 889);
             this.btnBeenden.Name = "btnBeenden";

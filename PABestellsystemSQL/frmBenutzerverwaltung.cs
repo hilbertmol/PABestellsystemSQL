@@ -30,6 +30,8 @@ namespace PABestellsystemSQL
             dt = DataAccess.GetAllLoginDB(tableName);
             dgvBenutzer.DataSource = dt;
             dv = new DataView(dt);
+            dgvBenutzer.AutoResizeColumns();
+            dgvBenutzer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void btnInsert_Click(object sender, EventArgs e)

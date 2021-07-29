@@ -33,6 +33,8 @@ namespace PABestellsystemSQL
             dt = DataAccess.GetAllManagementDB(tableName);
             dgvProdukte.DataSource = dt;
             dv = new DataView(dt);
+            dgvProdukte.AutoResizeColumns();
+            dgvProdukte.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void GetDataCBox()
@@ -56,7 +58,8 @@ namespace PABestellsystemSQL
                         kat = reader["kategorie"].ToString();
                         if(!cmbKategorie.Items.Contains(kat))
                             cmbKategorie.Items.Add(kat);
-                    }                   
+                    }
+                    cmbKategorie.SelectedItem = cmbKategorie.Items[0];
                 }
             }
             catch (Exception ex)

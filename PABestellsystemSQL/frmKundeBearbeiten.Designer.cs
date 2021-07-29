@@ -54,6 +54,7 @@ namespace PABestellsystemSQL
             // 
             // txtOrt
             // 
+            this.txtOrt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtOrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrt.Location = new System.Drawing.Point(259, 547);
             this.txtOrt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -63,6 +64,7 @@ namespace PABestellsystemSQL
             // 
             // lblOrt
             // 
+            this.lblOrt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblOrt.AutoSize = true;
             this.lblOrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrt.Location = new System.Drawing.Point(135, 549);
@@ -73,6 +75,7 @@ namespace PABestellsystemSQL
             // 
             // txtPlz
             // 
+            this.txtPlz.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPlz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlz.Location = new System.Drawing.Point(259, 493);
             this.txtPlz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -82,6 +85,7 @@ namespace PABestellsystemSQL
             // 
             // lblPlz
             // 
+            this.lblPlz.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPlz.AutoSize = true;
             this.lblPlz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlz.Location = new System.Drawing.Point(135, 495);
@@ -92,6 +96,7 @@ namespace PABestellsystemSQL
             // 
             // txtHausnr
             // 
+            this.txtHausnr.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtHausnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHausnr.Location = new System.Drawing.Point(259, 441);
             this.txtHausnr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -101,6 +106,7 @@ namespace PABestellsystemSQL
             // 
             // lblHausnr
             // 
+            this.lblHausnr.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblHausnr.AutoSize = true;
             this.lblHausnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHausnr.Location = new System.Drawing.Point(135, 445);
@@ -111,6 +117,7 @@ namespace PABestellsystemSQL
             // 
             // txtStrasse
             // 
+            this.txtStrasse.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtStrasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrasse.Location = new System.Drawing.Point(259, 389);
             this.txtStrasse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -120,6 +127,7 @@ namespace PABestellsystemSQL
             // 
             // lblStrasse
             // 
+            this.lblStrasse.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblStrasse.AutoSize = true;
             this.lblStrasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStrasse.Location = new System.Drawing.Point(135, 392);
@@ -130,6 +138,7 @@ namespace PABestellsystemSQL
             // 
             // txtTelefon
             // 
+            this.txtTelefon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefon.Location = new System.Drawing.Point(259, 339);
             this.txtTelefon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -139,6 +148,7 @@ namespace PABestellsystemSQL
             // 
             // lblTelefon
             // 
+            this.lblTelefon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTelefon.AutoSize = true;
             this.lblTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefon.Location = new System.Drawing.Point(135, 341);
@@ -149,6 +159,7 @@ namespace PABestellsystemSQL
             // 
             // txtVorname
             // 
+            this.txtVorname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVorname.Location = new System.Drawing.Point(259, 189);
             this.txtVorname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -158,6 +169,7 @@ namespace PABestellsystemSQL
             // 
             // lblVorname
             // 
+            this.lblVorname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblVorname.AutoSize = true;
             this.lblVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVorname.Location = new System.Drawing.Point(135, 192);
@@ -168,6 +180,7 @@ namespace PABestellsystemSQL
             // 
             // btnOK
             // 
+            this.btnOK.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Location = new System.Drawing.Point(259, 610);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -180,6 +193,7 @@ namespace PABestellsystemSQL
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(259, 287);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -189,6 +203,7 @@ namespace PABestellsystemSQL
             // 
             // txtNachname
             // 
+            this.txtNachname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNachname.Location = new System.Drawing.Point(259, 239);
             this.txtNachname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -198,6 +213,7 @@ namespace PABestellsystemSQL
             // 
             // txtKundennr
             // 
+            this.txtKundennr.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKundennr.Location = new System.Drawing.Point(259, 136);
             this.txtKundennr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -207,6 +223,7 @@ namespace PABestellsystemSQL
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(135, 291);
@@ -217,6 +234,7 @@ namespace PABestellsystemSQL
             // 
             // lblNachname
             // 
+            this.lblNachname.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblNachname.AutoSize = true;
             this.lblNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNachname.Location = new System.Drawing.Point(135, 242);
@@ -227,16 +245,18 @@ namespace PABestellsystemSQL
             // 
             // lblKundennr
             // 
+            this.lblKundennr.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblKundennr.AutoSize = true;
             this.lblKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKundennr.Location = new System.Drawing.Point(135, 139);
             this.lblKundennr.Name = "lblKundennr";
-            this.lblKundennr.Size = new System.Drawing.Size(93, 20);
+            this.lblKundennr.Size = new System.Drawing.Size(88, 20);
             this.lblKundennr.TabIndex = 23;
-            this.lblKundennr.Text = "Kunden Nr:";
+            this.lblKundennr.Text = "KundenNr:";
             // 
             // btnAbbrechen
             // 
+            this.btnAbbrechen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbbrechen.Location = new System.Drawing.Point(439, 610);
             this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -249,6 +269,8 @@ namespace PABestellsystemSQL
             // 
             // lblUeberschriftBestellungen
             // 
+            this.lblUeberschriftBestellungen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUeberschriftBestellungen.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUeberschriftBestellungen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUeberschriftBestellungen.ForeColor = System.Drawing.SystemColors.ControlLightLight;

@@ -106,6 +106,7 @@ namespace PABestellsystemSQL
             // 
             // btnSearch
             // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(1129, 801);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -132,6 +133,7 @@ namespace PABestellsystemSQL
             // 
             // lblAnzK
             // 
+            this.lblAnzK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAnzK.AutoSize = true;
             this.lblAnzK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnzK.Location = new System.Drawing.Point(23, 807);
@@ -143,6 +145,7 @@ namespace PABestellsystemSQL
             // 
             // lblAnzKA
             // 
+            this.lblAnzKA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAnzKA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblAnzKA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnzKA.Location = new System.Drawing.Point(199, 801);
@@ -154,6 +157,7 @@ namespace PABestellsystemSQL
             // 
             // lblSummeA
             // 
+            this.lblSummeA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSummeA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSummeA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSummeA.Location = new System.Drawing.Point(199, 855);
@@ -165,6 +169,7 @@ namespace PABestellsystemSQL
             // 
             // lblSumme
             // 
+            this.lblSumme.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSumme.AutoSize = true;
             this.lblSumme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSumme.Location = new System.Drawing.Point(23, 862);
@@ -176,6 +181,7 @@ namespace PABestellsystemSQL
             // 
             // lblAnzahlPrA
             // 
+            this.lblAnzahlPrA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAnzahlPrA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblAnzahlPrA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnzahlPrA.Location = new System.Drawing.Point(199, 905);
@@ -187,6 +193,7 @@ namespace PABestellsystemSQL
             // 
             // lblAnzahlPr
             // 
+            this.lblAnzahlPr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAnzahlPr.AutoSize = true;
             this.lblAnzahlPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnzahlPr.Location = new System.Drawing.Point(23, 911);
@@ -198,9 +205,10 @@ namespace PABestellsystemSQL
             // 
             // cmbGruppieren
             // 
+            this.cmbGruppieren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbGruppieren.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGruppieren.FormattingEnabled = true;
-            this.cmbGruppieren.Location = new System.Drawing.Point(788, 855);
+            this.cmbGruppieren.Location = new System.Drawing.Point(892, 855);
             this.cmbGruppieren.Margin = new System.Windows.Forms.Padding(4);
             this.cmbGruppieren.Name = "cmbGruppieren";
             this.cmbGruppieren.Size = new System.Drawing.Size(159, 28);
@@ -208,8 +216,9 @@ namespace PABestellsystemSQL
             // 
             // btnGruppieren
             // 
+            this.btnGruppieren.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGruppieren.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGruppieren.Location = new System.Drawing.Point(788, 801);
+            this.btnGruppieren.Location = new System.Drawing.Point(892, 801);
             this.btnGruppieren.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGruppieren.Name = "btnGruppieren";
             this.btnGruppieren.Size = new System.Drawing.Size(160, 37);
@@ -220,6 +229,7 @@ namespace PABestellsystemSQL
             // 
             // btnZurück
             // 
+            this.btnZurück.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnZurück.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZurück.Location = new System.Drawing.Point(1129, 901);
             this.btnZurück.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
