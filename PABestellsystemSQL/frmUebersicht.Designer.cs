@@ -53,6 +53,8 @@ namespace PABestellsystemSQL
             // dgvKunden
             // 
             this.dgvKunden.AllowUserToAddRows = false;
+            this.dgvKunden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvKunden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKunden.Location = new System.Drawing.Point(27, 80);
             this.dgvKunden.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -77,6 +79,8 @@ namespace PABestellsystemSQL
             // dgvProdukte
             // 
             this.dgvProdukte.AllowUserToAddRows = false;
+            this.dgvProdukte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvProdukte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProdukte.Location = new System.Drawing.Point(663, 320);
             this.dgvProdukte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -89,6 +93,8 @@ namespace PABestellsystemSQL
             // dgvUebersicht
             // 
             this.dgvUebersicht.AllowUserToAddRows = false;
+            this.dgvUebersicht.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvUebersicht.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUebersicht.Location = new System.Drawing.Point(27, 539);
             this.dgvUebersicht.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -112,6 +118,8 @@ namespace PABestellsystemSQL
             // 
             // lblUeberschriftProdukte
             // 
+            this.lblUeberschriftProdukte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUeberschriftProdukte.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUeberschriftProdukte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUeberschriftProdukte.ForeColor = System.Drawing.SystemColors.ControlLightLight;

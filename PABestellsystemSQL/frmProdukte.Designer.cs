@@ -74,10 +74,12 @@ namespace PABestellsystemSQL
             // 
             // lblUeberschriftProdukte
             // 
+            this.lblUeberschriftProdukte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUeberschriftProdukte.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUeberschriftProdukte.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUeberschriftProdukte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblUeberschriftProdukte.Location = new System.Drawing.Point(1, 25);
+            this.lblUeberschriftProdukte.Location = new System.Drawing.Point(1, 24);
             this.lblUeberschriftProdukte.Name = "lblUeberschriftProdukte";
             this.lblUeberschriftProdukte.Size = new System.Drawing.Size(1317, 49);
             this.lblUeberschriftProdukte.TabIndex = 40;
@@ -87,6 +89,8 @@ namespace PABestellsystemSQL
             // dgvProdukte
             // 
             this.dgvProdukte.AllowUserToAddRows = false;
+            this.dgvProdukte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvProdukte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProdukte.Location = new System.Drawing.Point(12, 97);
             this.dgvProdukte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -110,6 +114,7 @@ namespace PABestellsystemSQL
             // 
             // btnSearch
             // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(1100, 884);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -118,10 +123,11 @@ namespace PABestellsystemSQL
             this.btnSearch.TabIndex = 37;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblProduktnr
             // 
+            this.lblProduktnr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblProduktnr.AutoSize = true;
             this.lblProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProduktnr.Location = new System.Drawing.Point(755, 738);
@@ -132,6 +138,7 @@ namespace PABestellsystemSQL
             // 
             // txtProduktnr
             // 
+            this.txtProduktnr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProduktnr.Location = new System.Drawing.Point(921, 735);
             this.txtProduktnr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -141,6 +148,7 @@ namespace PABestellsystemSQL
             // 
             // lblProduktname
             // 
+            this.lblProduktname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblProduktname.AutoSize = true;
             this.lblProduktname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProduktname.Location = new System.Drawing.Point(755, 786);
@@ -151,6 +159,7 @@ namespace PABestellsystemSQL
             // 
             // txtProduktname
             // 
+            this.txtProduktname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProduktname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProduktname.Location = new System.Drawing.Point(921, 783);
             this.txtProduktname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -160,6 +169,7 @@ namespace PABestellsystemSQL
             // 
             // cmbKategorie
             // 
+            this.cmbKategorie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbKategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbKategorie.FormattingEnabled = true;
             this.cmbKategorie.Location = new System.Drawing.Point(921, 828);
@@ -170,6 +180,7 @@ namespace PABestellsystemSQL
             // 
             // lblKategorie
             // 
+            this.lblKategorie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblKategorie.AutoSize = true;
             this.lblKategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKategorie.Location = new System.Drawing.Point(755, 832);
@@ -180,6 +191,7 @@ namespace PABestellsystemSQL
             // 
             // chkbProduktnr
             // 
+            this.chkbProduktnr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.chkbProduktnr.AutoSize = true;
             this.chkbProduktnr.Location = new System.Drawing.Point(1269, 742);
             this.chkbProduktnr.Margin = new System.Windows.Forms.Padding(4);
@@ -191,6 +203,7 @@ namespace PABestellsystemSQL
             // 
             // chkbProduktname
             // 
+            this.chkbProduktname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.chkbProduktname.AutoSize = true;
             this.chkbProduktname.Location = new System.Drawing.Point(1269, 790);
             this.chkbProduktname.Margin = new System.Windows.Forms.Padding(4);
@@ -202,6 +215,7 @@ namespace PABestellsystemSQL
             // 
             // chkbKategorie
             // 
+            this.chkbKategorie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.chkbKategorie.AutoSize = true;
             this.chkbKategorie.Location = new System.Drawing.Point(1269, 836);
             this.chkbKategorie.Margin = new System.Windows.Forms.Padding(4);
@@ -213,6 +227,7 @@ namespace PABestellsystemSQL
             // 
             // btnZurück
             // 
+            this.btnZurück.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnZurück.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZurück.Location = new System.Drawing.Point(12, 903);
             this.btnZurück.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

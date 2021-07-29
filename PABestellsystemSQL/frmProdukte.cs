@@ -65,12 +65,7 @@ namespace PABestellsystemSQL
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            UpdateBindingDSource();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void frmProdukte_Load(object sender, EventArgs e)
         {
             UpdateBindingDSource();
         }
@@ -119,7 +114,7 @@ namespace PABestellsystemSQL
             Application.Exit();
         }
 
-        private void btnSearch_Click_1(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             SqlDataAdapter sqlDa = new SqlDataAdapter();
             DataTable dt = new DataTable();
@@ -134,7 +129,8 @@ namespace PABestellsystemSQL
 
                     if (chkbProduktnr.Checked)
                     {
-                        cmdStr = "select * from produkte where produktnr = @produktnr";
+                        cmdStr = "select produktnr, produktname, preis, beschreibung, hersteller, " +
+                            "kategorie, stueckzahl from produkte where produktnr = @produktnr";
                         cmd = new SqlCommand(cmdStr, sqlConn);
                         cmd.Parameters.AddWithValue("@produktnr", txtProduktnr.Text);
                     }
@@ -147,7 +143,8 @@ namespace PABestellsystemSQL
                     }
                     else if (chkbKategorie.Checked)
                     {
-                        cmdStr = "select * from produkte where kategorie = @kategorie";
+                        cmdStr = "select produktnr, produktname, preis, beschreibung, hersteller, " +
+                            "kategorie, stueckzahl from produkte where kategorie = @kategorie";
                         cmd = new SqlCommand(cmdStr, sqlConn);
                         cmd.Parameters.AddWithValue("@kategorie", cmbKategorie.SelectedItem.ToString());
                     }

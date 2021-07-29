@@ -52,6 +52,8 @@ namespace PABestellsystemSQL
             // 
             // lblUeberschriftBestellungen
             // 
+            this.lblUeberschriftBestellungen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUeberschriftBestellungen.BackColor = System.Drawing.Color.SteelBlue;
             this.lblUeberschriftBestellungen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUeberschriftBestellungen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -65,6 +67,8 @@ namespace PABestellsystemSQL
             // dgvBenutzer
             // 
             this.dgvBenutzer.AllowUserToAddRows = false;
+            this.dgvBenutzer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvBenutzer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBenutzer.Location = new System.Drawing.Point(65, 480);
             this.dgvBenutzer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -248,6 +252,7 @@ namespace PABestellsystemSQL
             // 
             // btnZurück
             // 
+            this.btnZurück.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnZurück.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZurück.Location = new System.Drawing.Point(65, 890);
             this.btnZurück.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
