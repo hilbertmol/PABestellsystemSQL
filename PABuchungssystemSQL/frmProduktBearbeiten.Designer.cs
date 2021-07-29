@@ -49,13 +49,14 @@ namespace PABuchungssystemSQL
             this.lblPfad = new System.Windows.Forms.Label();
             this.txtPfad = new System.Windows.Forms.TextBox();
             this.picProdukt = new System.Windows.Forms.PictureBox();
+            this.lblProduktbearbeiten = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picProdukt)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAbbrechen
             // 
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(470, 761);
+            this.btnAbbrechen.Location = new System.Drawing.Point(470, 779);
             this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAbbrechen.Name = "btnAbbrechen";
             this.btnAbbrechen.Size = new System.Drawing.Size(160, 37);
@@ -67,7 +68,7 @@ namespace PABuchungssystemSQL
             // txtStueckzahl
             // 
             this.txtStueckzahl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStueckzahl.Location = new System.Drawing.Point(209, 389);
+            this.txtStueckzahl.Location = new System.Drawing.Point(209, 407);
             this.txtStueckzahl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStueckzahl.Name = "txtStueckzahl";
             this.txtStueckzahl.Size = new System.Drawing.Size(421, 26);
@@ -77,7 +78,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblStueckzahl.AutoSize = true;
             this.lblStueckzahl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStueckzahl.Location = new System.Drawing.Point(57, 392);
+            this.lblStueckzahl.Location = new System.Drawing.Point(57, 410);
             this.lblStueckzahl.Name = "lblStueckzahl";
             this.lblStueckzahl.Size = new System.Drawing.Size(87, 20);
             this.lblStueckzahl.TabIndex = 56;
@@ -86,7 +87,7 @@ namespace PABuchungssystemSQL
             // txtKategorie
             // 
             this.txtKategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKategorie.Location = new System.Drawing.Point(209, 338);
+            this.txtKategorie.Location = new System.Drawing.Point(209, 356);
             this.txtKategorie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKategorie.Name = "txtKategorie";
             this.txtKategorie.Size = new System.Drawing.Size(421, 26);
@@ -96,7 +97,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblKategorie.AutoSize = true;
             this.lblKategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKategorie.Location = new System.Drawing.Point(57, 340);
+            this.lblKategorie.Location = new System.Drawing.Point(57, 358);
             this.lblKategorie.Name = "lblKategorie";
             this.lblKategorie.Size = new System.Drawing.Size(85, 20);
             this.lblKategorie.TabIndex = 54;
@@ -105,7 +106,7 @@ namespace PABuchungssystemSQL
             // txtHersteller
             // 
             this.txtHersteller.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHersteller.Location = new System.Drawing.Point(209, 286);
+            this.txtHersteller.Location = new System.Drawing.Point(209, 304);
             this.txtHersteller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHersteller.Name = "txtHersteller";
             this.txtHersteller.Size = new System.Drawing.Size(421, 26);
@@ -115,7 +116,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblHersteller.AutoSize = true;
             this.lblHersteller.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHersteller.Location = new System.Drawing.Point(57, 290);
+            this.lblHersteller.Location = new System.Drawing.Point(57, 308);
             this.lblHersteller.Name = "lblHersteller";
             this.lblHersteller.Size = new System.Drawing.Size(88, 20);
             this.lblHersteller.TabIndex = 52;
@@ -124,7 +125,7 @@ namespace PABuchungssystemSQL
             // txtProduktname
             // 
             this.txtProduktname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduktname.Location = new System.Drawing.Point(209, 138);
+            this.txtProduktname.Location = new System.Drawing.Point(209, 156);
             this.txtProduktname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProduktname.Name = "txtProduktname";
             this.txtProduktname.Size = new System.Drawing.Size(421, 26);
@@ -134,7 +135,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblProduktname.AutoSize = true;
             this.lblProduktname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduktname.Location = new System.Drawing.Point(57, 141);
+            this.lblProduktname.Location = new System.Drawing.Point(57, 159);
             this.lblProduktname.Name = "lblProduktname";
             this.lblProduktname.Size = new System.Drawing.Size(112, 20);
             this.lblProduktname.TabIndex = 50;
@@ -143,7 +144,7 @@ namespace PABuchungssystemSQL
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(209, 761);
+            this.btnOK.Location = new System.Drawing.Point(209, 779);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(160, 37);
@@ -155,7 +156,7 @@ namespace PABuchungssystemSQL
             // txtBeschreibung
             // 
             this.txtBeschreibung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBeschreibung.Location = new System.Drawing.Point(209, 235);
+            this.txtBeschreibung.Location = new System.Drawing.Point(209, 253);
             this.txtBeschreibung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBeschreibung.Name = "txtBeschreibung";
             this.txtBeschreibung.Size = new System.Drawing.Size(421, 26);
@@ -164,7 +165,7 @@ namespace PABuchungssystemSQL
             // txtPreis
             // 
             this.txtPreis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPreis.Location = new System.Drawing.Point(209, 187);
+            this.txtPreis.Location = new System.Drawing.Point(209, 205);
             this.txtPreis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPreis.Name = "txtPreis";
             this.txtPreis.Size = new System.Drawing.Size(421, 26);
@@ -173,7 +174,7 @@ namespace PABuchungssystemSQL
             // txtProduktnr
             // 
             this.txtProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduktnr.Location = new System.Drawing.Point(209, 85);
+            this.txtProduktnr.Location = new System.Drawing.Point(209, 103);
             this.txtProduktnr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProduktnr.Name = "txtProduktnr";
             this.txtProduktnr.Size = new System.Drawing.Size(421, 26);
@@ -183,7 +184,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblBeschreibung.AutoSize = true;
             this.lblBeschreibung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBeschreibung.Location = new System.Drawing.Point(57, 238);
+            this.lblBeschreibung.Location = new System.Drawing.Point(57, 256);
             this.lblBeschreibung.Name = "lblBeschreibung";
             this.lblBeschreibung.Size = new System.Drawing.Size(117, 20);
             this.lblBeschreibung.TabIndex = 45;
@@ -193,7 +194,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblPreis.AutoSize = true;
             this.lblPreis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreis.Location = new System.Drawing.Point(57, 191);
+            this.lblPreis.Location = new System.Drawing.Point(57, 209);
             this.lblPreis.Name = "lblPreis";
             this.lblPreis.Size = new System.Drawing.Size(53, 20);
             this.lblPreis.TabIndex = 44;
@@ -203,7 +204,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblProduktnr.AutoSize = true;
             this.lblProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduktnr.Location = new System.Drawing.Point(57, 88);
+            this.lblProduktnr.Location = new System.Drawing.Point(57, 106);
             this.lblProduktnr.Name = "lblProduktnr";
             this.lblProduktnr.Size = new System.Drawing.Size(89, 20);
             this.lblProduktnr.TabIndex = 43;
@@ -212,7 +213,7 @@ namespace PABuchungssystemSQL
             // btnUpload
             // 
             this.btnUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpload.Location = new System.Drawing.Point(628, 629);
+            this.btnUpload.Location = new System.Drawing.Point(628, 647);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(123, 42);
             this.btnUpload.TabIndex = 66;
@@ -224,7 +225,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblPfad.AutoSize = true;
             this.lblPfad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPfad.Location = new System.Drawing.Point(57, 693);
+            this.lblPfad.Location = new System.Drawing.Point(57, 711);
             this.lblPfad.Name = "lblPfad";
             this.lblPfad.Size = new System.Drawing.Size(82, 20);
             this.lblPfad.TabIndex = 65;
@@ -233,7 +234,7 @@ namespace PABuchungssystemSQL
             // txtPfad
             // 
             this.txtPfad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPfad.Location = new System.Drawing.Point(209, 690);
+            this.txtPfad.Location = new System.Drawing.Point(209, 708);
             this.txtPfad.Name = "txtPfad";
             this.txtPfad.Size = new System.Drawing.Size(542, 26);
             this.txtPfad.TabIndex = 64;
@@ -242,7 +243,7 @@ namespace PABuchungssystemSQL
             // 
             this.picProdukt.BackColor = System.Drawing.Color.Black;
             this.picProdukt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picProdukt.Location = new System.Drawing.Point(209, 441);
+            this.picProdukt.Location = new System.Drawing.Point(209, 459);
             this.picProdukt.Margin = new System.Windows.Forms.Padding(5);
             this.picProdukt.Name = "picProdukt";
             this.picProdukt.Padding = new System.Windows.Forms.Padding(5);
@@ -250,11 +251,24 @@ namespace PABuchungssystemSQL
             this.picProdukt.TabIndex = 63;
             this.picProdukt.TabStop = false;
             // 
+            // lblProduktbearbeiten
+            // 
+            this.lblProduktbearbeiten.BackColor = System.Drawing.Color.SteelBlue;
+            this.lblProduktbearbeiten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProduktbearbeiten.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblProduktbearbeiten.Location = new System.Drawing.Point(1, 21);
+            this.lblProduktbearbeiten.Name = "lblProduktbearbeiten";
+            this.lblProduktbearbeiten.Size = new System.Drawing.Size(787, 49);
+            this.lblProduktbearbeiten.TabIndex = 67;
+            this.lblProduktbearbeiten.Text = "Produkt bearbeiten";
+            this.lblProduktbearbeiten.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmProduktBearbeiten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 853);
+            this.Controls.Add(this.lblProduktbearbeiten);
             this.Controls.Add(this.btnUpload);
             this.Controls.Add(this.lblPfad);
             this.Controls.Add(this.txtPfad);
@@ -278,7 +292,7 @@ namespace PABuchungssystemSQL
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmProduktBearbeiten";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Produkt Bearbeiten";
+            this.Text = "Bestellsystem";
             ((System.ComponentModel.ISupportInitialize)(this.picProdukt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -307,5 +321,6 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.Label lblPfad;
         private System.Windows.Forms.TextBox txtPfad;
         private System.Windows.Forms.PictureBox picProdukt;
+        private System.Windows.Forms.Label lblProduktbearbeiten;
     }
 }

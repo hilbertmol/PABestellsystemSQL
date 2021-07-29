@@ -47,12 +47,13 @@ namespace PABuchungssystemSQL
             this.cmbKontotyp = new System.Windows.Forms.ComboBox();
             this.chkbPasswortEinblenden = new System.Windows.Forms.CheckBox();
             this.lblPassShow = new System.Windows.Forms.Label();
+            this.lblBenutzerbearbeiten = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAbbrechen
             // 
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(442, 559);
+            this.btnAbbrechen.Location = new System.Drawing.Point(433, 598);
             this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAbbrechen.Name = "btnAbbrechen";
             this.btnAbbrechen.Size = new System.Drawing.Size(160, 37);
@@ -65,7 +66,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblKontotyp.AutoSize = true;
             this.lblKontotyp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKontotyp.Location = new System.Drawing.Point(139, 447);
+            this.lblKontotyp.Location = new System.Drawing.Point(130, 486);
             this.lblKontotyp.Name = "lblKontotyp";
             this.lblKontotyp.Size = new System.Drawing.Size(79, 20);
             this.lblKontotyp.TabIndex = 58;
@@ -74,7 +75,7 @@ namespace PABuchungssystemSQL
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(263, 393);
+            this.txtEmail.Location = new System.Drawing.Point(254, 432);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(339, 26);
@@ -84,7 +85,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(139, 396);
+            this.lblEmail.Location = new System.Drawing.Point(130, 435);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(56, 20);
             this.lblEmail.TabIndex = 56;
@@ -93,7 +94,7 @@ namespace PABuchungssystemSQL
             // txtNachname
             // 
             this.txtNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNachname.Location = new System.Drawing.Point(263, 341);
+            this.txtNachname.Location = new System.Drawing.Point(254, 380);
             this.txtNachname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNachname.Name = "txtNachname";
             this.txtNachname.Size = new System.Drawing.Size(339, 26);
@@ -103,7 +104,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblNachname.AutoSize = true;
             this.lblNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNachname.Location = new System.Drawing.Point(139, 343);
+            this.lblNachname.Location = new System.Drawing.Point(130, 382);
             this.lblNachname.Name = "lblNachname";
             this.lblNachname.Size = new System.Drawing.Size(94, 20);
             this.lblNachname.TabIndex = 54;
@@ -112,7 +113,7 @@ namespace PABuchungssystemSQL
             // txtVorname
             // 
             this.txtVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVorname.Location = new System.Drawing.Point(263, 287);
+            this.txtVorname.Location = new System.Drawing.Point(254, 326);
             this.txtVorname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtVorname.Name = "txtVorname";
             this.txtVorname.Size = new System.Drawing.Size(339, 26);
@@ -122,7 +123,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblVorname.AutoSize = true;
             this.lblVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVorname.Location = new System.Drawing.Point(139, 289);
+            this.lblVorname.Location = new System.Drawing.Point(130, 328);
             this.lblVorname.Name = "lblVorname";
             this.lblVorname.Size = new System.Drawing.Size(81, 20);
             this.lblVorname.TabIndex = 52;
@@ -131,7 +132,7 @@ namespace PABuchungssystemSQL
             // txtPasswort
             // 
             this.txtPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswort.Location = new System.Drawing.Point(263, 167);
+            this.txtPasswort.Location = new System.Drawing.Point(254, 206);
             this.txtPasswort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPasswort.Name = "txtPasswort";
             this.txtPasswort.Size = new System.Drawing.Size(339, 26);
@@ -141,7 +142,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblPasswort.AutoSize = true;
             this.lblPasswort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswort.Location = new System.Drawing.Point(139, 171);
+            this.lblPasswort.Location = new System.Drawing.Point(130, 210);
             this.lblPasswort.Name = "lblPasswort";
             this.lblPasswort.Size = new System.Drawing.Size(84, 20);
             this.lblPasswort.TabIndex = 50;
@@ -150,7 +151,7 @@ namespace PABuchungssystemSQL
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(263, 559);
+            this.btnOK.Location = new System.Drawing.Point(254, 598);
             this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(160, 37);
@@ -162,7 +163,7 @@ namespace PABuchungssystemSQL
             // txtPasswortW
             // 
             this.txtPasswortW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswortW.Location = new System.Drawing.Point(263, 231);
+            this.txtPasswortW.Location = new System.Drawing.Point(254, 270);
             this.txtPasswortW.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPasswortW.Name = "txtPasswortW";
             this.txtPasswortW.Size = new System.Drawing.Size(339, 26);
@@ -171,7 +172,7 @@ namespace PABuchungssystemSQL
             // txtLogin
             // 
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.Location = new System.Drawing.Point(263, 114);
+            this.txtLogin.Location = new System.Drawing.Point(254, 153);
             this.txtLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(339, 26);
@@ -180,7 +181,7 @@ namespace PABuchungssystemSQL
             // lblPasswortW
             // 
             this.lblPasswortW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswortW.Location = new System.Drawing.Point(139, 218);
+            this.lblPasswortW.Location = new System.Drawing.Point(130, 257);
             this.lblPasswortW.Name = "lblPasswortW";
             this.lblPasswortW.Size = new System.Drawing.Size(129, 48);
             this.lblPasswortW.TabIndex = 44;
@@ -190,7 +191,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.Location = new System.Drawing.Point(139, 118);
+            this.lblLogin.Location = new System.Drawing.Point(130, 157);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(55, 20);
             this.lblLogin.TabIndex = 43;
@@ -200,8 +201,8 @@ namespace PABuchungssystemSQL
             // 
             this.cmbKontotyp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbKontotyp.FormattingEnabled = true;
-            this.cmbKontotyp.Location = new System.Drawing.Point(263, 443);
-            this.cmbKontotyp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbKontotyp.Location = new System.Drawing.Point(254, 482);
+            this.cmbKontotyp.Margin = new System.Windows.Forms.Padding(4);
             this.cmbKontotyp.Name = "cmbKontotyp";
             this.cmbKontotyp.Size = new System.Drawing.Size(339, 28);
             this.cmbKontotyp.TabIndex = 63;
@@ -210,7 +211,7 @@ namespace PABuchungssystemSQL
             // 
             this.chkbPasswortEinblenden.AutoSize = true;
             this.chkbPasswortEinblenden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbPasswortEinblenden.Location = new System.Drawing.Point(453, 508);
+            this.chkbPasswortEinblenden.Location = new System.Drawing.Point(444, 547);
             this.chkbPasswortEinblenden.Name = "chkbPasswortEinblenden";
             this.chkbPasswortEinblenden.Size = new System.Drawing.Size(18, 17);
             this.chkbPasswortEinblenden.TabIndex = 65;
@@ -221,17 +222,30 @@ namespace PABuchungssystemSQL
             // 
             this.lblPassShow.AutoSize = true;
             this.lblPassShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassShow.Location = new System.Drawing.Point(259, 505);
+            this.lblPassShow.Location = new System.Drawing.Point(250, 544);
             this.lblPassShow.Name = "lblPassShow";
             this.lblPassShow.Size = new System.Drawing.Size(169, 20);
             this.lblPassShow.TabIndex = 64;
             this.lblPassShow.Text = "Passwort einblenden:";
+            // 
+            // lblBenutzerbearbeiten
+            // 
+            this.lblBenutzerbearbeiten.BackColor = System.Drawing.Color.SteelBlue;
+            this.lblBenutzerbearbeiten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBenutzerbearbeiten.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblBenutzerbearbeiten.Location = new System.Drawing.Point(1, 19);
+            this.lblBenutzerbearbeiten.Name = "lblBenutzerbearbeiten";
+            this.lblBenutzerbearbeiten.Size = new System.Drawing.Size(788, 49);
+            this.lblBenutzerbearbeiten.TabIndex = 66;
+            this.lblBenutzerbearbeiten.Text = "Benutzer bearbeiten";
+            this.lblBenutzerbearbeiten.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmBenutzerBearbeiten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 732);
+            this.Controls.Add(this.lblBenutzerbearbeiten);
             this.Controls.Add(this.chkbPasswortEinblenden);
             this.Controls.Add(this.lblPassShow);
             this.Controls.Add(this.cmbKontotyp);
@@ -250,10 +264,10 @@ namespace PABuchungssystemSQL
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblPasswortW);
             this.Controls.Add(this.lblLogin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBenutzerBearbeiten";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Benutzer Bearbeiten";
+            this.Text = "Bestellsystem";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,5 +293,6 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.ComboBox cmbKontotyp;
         private System.Windows.Forms.CheckBox chkbPasswortEinblenden;
         private System.Windows.Forms.Label lblPassShow;
+        private System.Windows.Forms.Label lblBenutzerbearbeiten;
     }
 }

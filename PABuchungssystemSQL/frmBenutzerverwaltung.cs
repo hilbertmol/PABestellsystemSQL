@@ -116,5 +116,12 @@ namespace PABuchungssystemSQL
                 lblTypA.Text = dgvBenutzer.Rows[currentRow].Cells["typ"].Value.ToString();
             }
         }
+
+        private void btnZurück_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHauptmenue fH = new frmHauptmenue();
+            fH.Show();
+        }
     }
 }

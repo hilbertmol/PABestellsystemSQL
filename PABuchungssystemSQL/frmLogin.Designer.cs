@@ -93,7 +93,7 @@ namespace PABuchungssystemSQL
             this.lblPassShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassShow.Location = new System.Drawing.Point(125, 298);
             this.lblPassShow.Name = "lblPassShow";
-            this.lblPassShow.Size = new System.Drawing.Size(211, 25);
+            this.lblPassShow.Size = new System.Drawing.Size(169, 20);
             this.lblPassShow.TabIndex = 5;
             this.lblPassShow.Text = "Passwort einblenden:";
             // 
@@ -128,7 +128,7 @@ namespace PABuchungssystemSQL
             this.lblUeberschriftBS.Name = "lblUeberschriftBS";
             this.lblUeberschriftBS.Size = new System.Drawing.Size(799, 49);
             this.lblUeberschriftBS.TabIndex = 25;
-            this.lblUeberschriftBS.Text = "Bestellsystem";
+            this.lblUeberschriftBS.Text = "Anmeldung";
             this.lblUeberschriftBS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmLogin
@@ -148,7 +148,7 @@ namespace PABuchungssystemSQL
             this.Name = "frmLogin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Bestellsystem";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

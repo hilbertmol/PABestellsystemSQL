@@ -44,6 +44,7 @@ namespace PABuchungssystemSQL
             this.chkbProduktnr = new System.Windows.Forms.CheckBox();
             this.chkbProduktname = new System.Windows.Forms.CheckBox();
             this.chkbKategorie = new System.Windows.Forms.CheckBox();
+            this.btnZurück = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdukte)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +111,7 @@ namespace PABuchungssystemSQL
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(1059, 903);
+            this.btnSearch.Location = new System.Drawing.Point(1100, 884);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(160, 37);
@@ -123,7 +124,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblProduktnr.AutoSize = true;
             this.lblProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduktnr.Location = new System.Drawing.Point(713, 738);
+            this.lblProduktnr.Location = new System.Drawing.Point(755, 738);
             this.lblProduktnr.Name = "lblProduktnr";
             this.lblProduktnr.Size = new System.Drawing.Size(89, 20);
             this.lblProduktnr.TabIndex = 36;
@@ -132,7 +133,7 @@ namespace PABuchungssystemSQL
             // txtProduktnr
             // 
             this.txtProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduktnr.Location = new System.Drawing.Point(879, 735);
+            this.txtProduktnr.Location = new System.Drawing.Point(921, 735);
             this.txtProduktnr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProduktnr.Name = "txtProduktnr";
             this.txtProduktnr.Size = new System.Drawing.Size(339, 26);
@@ -142,7 +143,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblProduktname.AutoSize = true;
             this.lblProduktname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduktname.Location = new System.Drawing.Point(713, 786);
+            this.lblProduktname.Location = new System.Drawing.Point(755, 786);
             this.lblProduktname.Name = "lblProduktname";
             this.lblProduktname.Size = new System.Drawing.Size(112, 20);
             this.lblProduktname.TabIndex = 44;
@@ -151,7 +152,7 @@ namespace PABuchungssystemSQL
             // txtProduktname
             // 
             this.txtProduktname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduktname.Location = new System.Drawing.Point(879, 783);
+            this.txtProduktname.Location = new System.Drawing.Point(921, 783);
             this.txtProduktname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProduktname.Name = "txtProduktname";
             this.txtProduktname.Size = new System.Drawing.Size(339, 26);
@@ -161,7 +162,7 @@ namespace PABuchungssystemSQL
             // 
             this.cmbKategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbKategorie.FormattingEnabled = true;
-            this.cmbKategorie.Location = new System.Drawing.Point(879, 828);
+            this.cmbKategorie.Location = new System.Drawing.Point(921, 828);
             this.cmbKategorie.Margin = new System.Windows.Forms.Padding(4);
             this.cmbKategorie.Name = "cmbKategorie";
             this.cmbKategorie.Size = new System.Drawing.Size(339, 28);
@@ -171,7 +172,7 @@ namespace PABuchungssystemSQL
             // 
             this.lblKategorie.AutoSize = true;
             this.lblKategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKategorie.Location = new System.Drawing.Point(713, 832);
+            this.lblKategorie.Location = new System.Drawing.Point(755, 832);
             this.lblKategorie.Name = "lblKategorie";
             this.lblKategorie.Size = new System.Drawing.Size(85, 20);
             this.lblKategorie.TabIndex = 46;
@@ -180,7 +181,7 @@ namespace PABuchungssystemSQL
             // chkbProduktnr
             // 
             this.chkbProduktnr.AutoSize = true;
-            this.chkbProduktnr.Location = new System.Drawing.Point(1227, 742);
+            this.chkbProduktnr.Location = new System.Drawing.Point(1269, 742);
             this.chkbProduktnr.Margin = new System.Windows.Forms.Padding(4);
             this.chkbProduktnr.Name = "chkbProduktnr";
             this.chkbProduktnr.Size = new System.Drawing.Size(18, 17);
@@ -191,7 +192,7 @@ namespace PABuchungssystemSQL
             // chkbProduktname
             // 
             this.chkbProduktname.AutoSize = true;
-            this.chkbProduktname.Location = new System.Drawing.Point(1227, 790);
+            this.chkbProduktname.Location = new System.Drawing.Point(1269, 790);
             this.chkbProduktname.Margin = new System.Windows.Forms.Padding(4);
             this.chkbProduktname.Name = "chkbProduktname";
             this.chkbProduktname.Size = new System.Drawing.Size(18, 17);
@@ -202,7 +203,7 @@ namespace PABuchungssystemSQL
             // chkbKategorie
             // 
             this.chkbKategorie.AutoSize = true;
-            this.chkbKategorie.Location = new System.Drawing.Point(1227, 836);
+            this.chkbKategorie.Location = new System.Drawing.Point(1269, 836);
             this.chkbKategorie.Margin = new System.Windows.Forms.Padding(4);
             this.chkbKategorie.Name = "chkbKategorie";
             this.chkbKategorie.Size = new System.Drawing.Size(18, 17);
@@ -210,11 +211,24 @@ namespace PABuchungssystemSQL
             this.chkbKategorie.UseVisualStyleBackColor = true;
             this.chkbKategorie.CheckedChanged += new System.EventHandler(this.chkbKategorie_CheckedChanged);
             // 
+            // btnZurück
+            // 
+            this.btnZurück.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZurück.Location = new System.Drawing.Point(12, 903);
+            this.btnZurück.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnZurück.Name = "btnZurück";
+            this.btnZurück.Size = new System.Drawing.Size(160, 37);
+            this.btnZurück.TabIndex = 53;
+            this.btnZurück.Text = "Zurück";
+            this.btnZurück.UseVisualStyleBackColor = true;
+            this.btnZurück.Click += new System.EventHandler(this.btnZurück_Click);
+            // 
             // frmProdukte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 954);
+            this.Controls.Add(this.btnZurück);
             this.Controls.Add(this.chkbProduktnr);
             this.Controls.Add(this.chkbProduktname);
             this.Controls.Add(this.chkbKategorie);
@@ -233,7 +247,7 @@ namespace PABuchungssystemSQL
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmProdukte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Produkte";
+            this.Text = "Bestellsystem";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProdukte_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdukte)).EndInit();
             this.ResumeLayout(false);
@@ -258,5 +272,6 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.CheckBox chkbProduktnr;
         private System.Windows.Forms.CheckBox chkbProduktname;
         private System.Windows.Forms.CheckBox chkbKategorie;
+        private System.Windows.Forms.Button btnZurück;
     }
 }

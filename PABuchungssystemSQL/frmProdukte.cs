@@ -140,7 +140,8 @@ namespace PABuchungssystemSQL
                     }
                     else if (chkbProduktname.Checked)
                     {
-                        cmdStr = "select * from produkte where produktname like @produktname";
+                        cmdStr = "select produktnr, produktname, preis, beschreibung, hersteller, " +
+                            "kategorie, stueckzahl from produkte where produktname like @produktname";
                         cmd = new SqlCommand(cmdStr, sqlConn);
                         cmd.Parameters.AddWithValue("@produktname", txtProduktname.Text + "%");
                     }
@@ -194,6 +195,13 @@ namespace PABuchungssystemSQL
                 chkbProduktnr.Checked = false;
                 chkbProduktname.Checked = false;
             }
+        }
+
+        private void btnZurück_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHauptmenue fH = new frmHauptmenue();
+            fH.Show();
         }
     }
 }

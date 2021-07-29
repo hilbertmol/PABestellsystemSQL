@@ -49,135 +49,130 @@ namespace PABuchungssystemSQL
             this.lblNachname = new System.Windows.Forms.Label();
             this.lblKundennr = new System.Windows.Forms.Label();
             this.btnAbbrechen = new System.Windows.Forms.Button();
+            this.lblUeberschriftBestellungen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtOrt
             // 
             this.txtOrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrt.Location = new System.Drawing.Point(191, 428);
-            this.txtOrt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOrt.Location = new System.Drawing.Point(259, 547);
+            this.txtOrt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOrt.Name = "txtOrt";
-            this.txtOrt.Size = new System.Drawing.Size(255, 23);
+            this.txtOrt.Size = new System.Drawing.Size(339, 26);
             this.txtOrt.TabIndex = 41;
             // 
             // lblOrt
             // 
             this.lblOrt.AutoSize = true;
             this.lblOrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrt.Location = new System.Drawing.Point(98, 430);
-            this.lblOrt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOrt.Location = new System.Drawing.Point(135, 549);
             this.lblOrt.Name = "lblOrt";
-            this.lblOrt.Size = new System.Drawing.Size(32, 17);
+            this.lblOrt.Size = new System.Drawing.Size(38, 20);
             this.lblOrt.TabIndex = 40;
             this.lblOrt.Text = "Ort:";
             // 
             // txtPlz
             // 
             this.txtPlz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlz.Location = new System.Drawing.Point(191, 384);
-            this.txtPlz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPlz.Location = new System.Drawing.Point(259, 493);
+            this.txtPlz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPlz.Name = "txtPlz";
-            this.txtPlz.Size = new System.Drawing.Size(255, 23);
+            this.txtPlz.Size = new System.Drawing.Size(339, 26);
             this.txtPlz.TabIndex = 39;
             // 
             // lblPlz
             // 
             this.lblPlz.AutoSize = true;
             this.lblPlz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlz.Location = new System.Drawing.Point(98, 386);
-            this.lblPlz.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPlz.Location = new System.Drawing.Point(135, 495);
             this.lblPlz.Name = "lblPlz";
-            this.lblPlz.Size = new System.Drawing.Size(38, 17);
+            this.lblPlz.Size = new System.Drawing.Size(44, 20);
             this.lblPlz.TabIndex = 38;
             this.lblPlz.Text = "PLZ:";
             // 
             // txtHausnr
             // 
             this.txtHausnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHausnr.Location = new System.Drawing.Point(191, 342);
-            this.txtHausnr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHausnr.Location = new System.Drawing.Point(259, 441);
+            this.txtHausnr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHausnr.Name = "txtHausnr";
-            this.txtHausnr.Size = new System.Drawing.Size(255, 23);
+            this.txtHausnr.Size = new System.Drawing.Size(339, 26);
             this.txtHausnr.TabIndex = 37;
             // 
             // lblHausnr
             // 
             this.lblHausnr.AutoSize = true;
             this.lblHausnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHausnr.Location = new System.Drawing.Point(98, 345);
-            this.lblHausnr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHausnr.Location = new System.Drawing.Point(135, 445);
             this.lblHausnr.Name = "lblHausnr";
-            this.lblHausnr.Size = new System.Drawing.Size(60, 17);
+            this.lblHausnr.Size = new System.Drawing.Size(72, 20);
             this.lblHausnr.TabIndex = 36;
             this.lblHausnr.Text = "HausNr:";
             // 
             // txtStrasse
             // 
             this.txtStrasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStrasse.Location = new System.Drawing.Point(191, 300);
-            this.txtStrasse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStrasse.Location = new System.Drawing.Point(259, 389);
+            this.txtStrasse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStrasse.Name = "txtStrasse";
-            this.txtStrasse.Size = new System.Drawing.Size(255, 23);
+            this.txtStrasse.Size = new System.Drawing.Size(339, 26);
             this.txtStrasse.TabIndex = 35;
             // 
             // lblStrasse
             // 
             this.lblStrasse.AutoSize = true;
             this.lblStrasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStrasse.Location = new System.Drawing.Point(98, 302);
-            this.lblStrasse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStrasse.Location = new System.Drawing.Point(135, 392);
             this.lblStrasse.Name = "lblStrasse";
-            this.lblStrasse.Size = new System.Drawing.Size(55, 17);
+            this.lblStrasse.Size = new System.Drawing.Size(64, 20);
             this.lblStrasse.TabIndex = 34;
             this.lblStrasse.Text = "Straße:";
             // 
             // txtTelefon
             // 
             this.txtTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefon.Location = new System.Drawing.Point(191, 259);
-            this.txtTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefon.Location = new System.Drawing.Point(259, 339);
+            this.txtTelefon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(255, 23);
+            this.txtTelefon.Size = new System.Drawing.Size(339, 26);
             this.txtTelefon.TabIndex = 33;
             // 
             // lblTelefon
             // 
             this.lblTelefon.AutoSize = true;
             this.lblTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefon.Location = new System.Drawing.Point(98, 261);
-            this.lblTelefon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTelefon.Location = new System.Drawing.Point(135, 341);
             this.lblTelefon.Name = "lblTelefon";
-            this.lblTelefon.Size = new System.Drawing.Size(60, 17);
+            this.lblTelefon.Size = new System.Drawing.Size(69, 20);
             this.lblTelefon.TabIndex = 32;
             this.lblTelefon.Text = "Telefon:";
             // 
             // txtVorname
             // 
             this.txtVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVorname.Location = new System.Drawing.Point(191, 137);
-            this.txtVorname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtVorname.Location = new System.Drawing.Point(259, 189);
+            this.txtVorname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtVorname.Name = "txtVorname";
-            this.txtVorname.Size = new System.Drawing.Size(255, 23);
+            this.txtVorname.Size = new System.Drawing.Size(339, 26);
             this.txtVorname.TabIndex = 31;
             // 
             // lblVorname
             // 
             this.lblVorname.AutoSize = true;
             this.lblVorname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVorname.Location = new System.Drawing.Point(98, 140);
-            this.lblVorname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVorname.Location = new System.Drawing.Point(135, 192);
             this.lblVorname.Name = "lblVorname";
-            this.lblVorname.Size = new System.Drawing.Size(69, 17);
+            this.lblVorname.Size = new System.Drawing.Size(81, 20);
             this.lblVorname.TabIndex = 30;
             this.lblVorname.Text = "Vorname:";
             // 
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(191, 479);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOK.Location = new System.Drawing.Point(259, 610);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(120, 30);
+            this.btnOK.Size = new System.Drawing.Size(160, 37);
             this.btnOK.TabIndex = 29;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -186,38 +181,37 @@ namespace PABuchungssystemSQL
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(191, 217);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(259, 287);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(255, 23);
+            this.txtEmail.Size = new System.Drawing.Size(339, 26);
             this.txtEmail.TabIndex = 28;
             // 
             // txtNachname
             // 
             this.txtNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNachname.Location = new System.Drawing.Point(191, 178);
-            this.txtNachname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNachname.Location = new System.Drawing.Point(259, 239);
+            this.txtNachname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNachname.Name = "txtNachname";
-            this.txtNachname.Size = new System.Drawing.Size(255, 23);
+            this.txtNachname.Size = new System.Drawing.Size(339, 26);
             this.txtNachname.TabIndex = 27;
             // 
             // txtKundennr
             // 
             this.txtKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKundennr.Location = new System.Drawing.Point(191, 94);
-            this.txtKundennr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKundennr.Location = new System.Drawing.Point(259, 136);
+            this.txtKundennr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKundennr.Name = "txtKundennr";
-            this.txtKundennr.Size = new System.Drawing.Size(255, 23);
+            this.txtKundennr.Size = new System.Drawing.Size(339, 26);
             this.txtKundennr.TabIndex = 26;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(98, 220);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Location = new System.Drawing.Point(135, 291);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 17);
+            this.lblEmail.Size = new System.Drawing.Size(56, 20);
             this.lblEmail.TabIndex = 25;
             this.lblEmail.Text = "Email:";
             // 
@@ -225,10 +219,9 @@ namespace PABuchungssystemSQL
             // 
             this.lblNachname.AutoSize = true;
             this.lblNachname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNachname.Location = new System.Drawing.Point(98, 180);
-            this.lblNachname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNachname.Location = new System.Drawing.Point(135, 242);
             this.lblNachname.Name = "lblNachname";
-            this.lblNachname.Size = new System.Drawing.Size(80, 17);
+            this.lblNachname.Size = new System.Drawing.Size(94, 20);
             this.lblNachname.TabIndex = 24;
             this.lblNachname.Text = "Nachname:";
             // 
@@ -236,30 +229,42 @@ namespace PABuchungssystemSQL
             // 
             this.lblKundennr.AutoSize = true;
             this.lblKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKundennr.Location = new System.Drawing.Point(98, 97);
-            this.lblKundennr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblKundennr.Location = new System.Drawing.Point(135, 139);
             this.lblKundennr.Name = "lblKundennr";
-            this.lblKundennr.Size = new System.Drawing.Size(76, 17);
+            this.lblKundennr.Size = new System.Drawing.Size(93, 20);
             this.lblKundennr.TabIndex = 23;
-            this.lblKundennr.Text = "KundenNr:";
+            this.lblKundennr.Text = "Kunden Nr:";
             // 
             // btnAbbrechen
             // 
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(326, 479);
-            this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAbbrechen.Location = new System.Drawing.Point(439, 610);
+            this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAbbrechen.Name = "btnAbbrechen";
-            this.btnAbbrechen.Size = new System.Drawing.Size(120, 30);
+            this.btnAbbrechen.Size = new System.Drawing.Size(160, 37);
             this.btnAbbrechen.TabIndex = 42;
             this.btnAbbrechen.Text = "Abbrechen";
             this.btnAbbrechen.UseVisualStyleBackColor = true;
             this.btnAbbrechen.Click += new System.EventHandler(this.btnAbbrechen_Click);
             // 
+            // lblUeberschriftBestellungen
+            // 
+            this.lblUeberschriftBestellungen.BackColor = System.Drawing.Color.SteelBlue;
+            this.lblUeberschriftBestellungen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUeberschriftBestellungen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblUeberschriftBestellungen.Location = new System.Drawing.Point(1, 18);
+            this.lblUeberschriftBestellungen.Name = "lblUeberschriftBestellungen";
+            this.lblUeberschriftBestellungen.Size = new System.Drawing.Size(787, 49);
+            this.lblUeberschriftBestellungen.TabIndex = 43;
+            this.lblUeberschriftBestellungen.Text = "Kunde bearbeiten";
+            this.lblUeberschriftBestellungen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmKundeBearbeiten
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 595);
+            this.ClientSize = new System.Drawing.Size(789, 732);
+            this.Controls.Add(this.lblUeberschriftBestellungen);
             this.Controls.Add(this.btnAbbrechen);
             this.Controls.Add(this.txtOrt);
             this.Controls.Add(this.lblOrt);
@@ -280,10 +285,10 @@ namespace PABuchungssystemSQL
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblNachname);
             this.Controls.Add(this.lblKundennr);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmKundeBearbeiten";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bearbeiten Kunde";
+            this.Text = "Bestellsystem";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,5 +316,6 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.Label lblNachname;
         private System.Windows.Forms.Label lblKundennr;
         private System.Windows.Forms.Button btnAbbrechen;
+        private System.Windows.Forms.Label lblUeberschriftBestellungen;
     }
 }

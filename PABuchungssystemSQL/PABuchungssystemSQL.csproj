@@ -105,8 +105,15 @@
     <Compile Include="frmProdukte.Designer.cs">
       <DependentUpon>frmProdukte.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHauptmenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHauptmenue.Designer.cs">
+      <DependentUpon>frmHauptmenue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Kunde.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmUebersicht.cs">
@@ -141,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProdukte.resx">
       <DependentUpon>frmProdukte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHauptmenue.resx">
+      <DependentUpon>frmHauptmenue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

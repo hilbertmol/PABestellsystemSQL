@@ -20,3 +20,4 @@ C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\P
 C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.frmUebersicht.resources
 C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.frmBenutzerBearbeiten.resources
 C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.frmBenutzerverwaltung.resources
+C:\Users\lukasz\Source\Repos\PABuchungssystemSQL\PABuchungssystemSQL\obj\Debug\PABuchungssystemSQL.frmHauptmenue.resources

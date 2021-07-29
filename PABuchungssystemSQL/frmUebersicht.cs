@@ -24,6 +24,8 @@ namespace PABuchungssystemSQL
             lblAnzahlPrA.Text = AnzahlProdukte().ToString();
             cmbGruppieren.Items.Add("kundennr");
             cmbGruppieren.Items.Add("hersteller");
+            dgvProdukte.Columns["pfad"].Visible = false;
+            dgvProdukte.Columns["image"].Visible = false;
         }
 
         private DataTable dt = null;
@@ -184,6 +186,13 @@ namespace PABuchungssystemSQL
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnZurück_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHauptmenue fH = new frmHauptmenue();
+            fH.Show();
         }
     }
 }

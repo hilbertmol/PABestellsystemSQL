@@ -13,6 +13,8 @@ namespace PABuchungssystemSQL
 {
     public partial class frmLogin : Form
     {
+        public string BenutzerAktuell { get; set; }
+
         public frmLogin()
         {
             InitializeComponent();
@@ -38,17 +40,14 @@ namespace PABuchungssystemSQL
 
                 if (dt.Rows.Count == 1)
                 {
+                    Login.BenutzerAktuell = txtLogin.Text;
+                    Login.KontoTyp = GetKontoTyp(txtLogin.Text);
                     this.Hide();
-                    //frmKunden frmK = new frmKunden();
-                    //frmK.Show();
-                    frmBestellungen frmB= new frmBestellungen();
-                    frmB.Show();
-                    //frmProdukte frmP = new frmProdukte();
-                    //frmP.Show();
-                    //frmUebersicht frmU = new frmUebersicht();
-                    //frmU.Show();
-                    //frmBenutzerverwaltung frmBV = new frmBenutzerverwaltung();
-                    //frmBV.Show();
+                    frmHauptmenue fH = new frmHauptmenue();
+                    if (!FormCheckOpened(fH.Name))
+                    { 
+                        fH.Show();
+                    }
                 }
                 else
                 {
@@ -64,7 +63,7 @@ namespace PABuchungssystemSQL
 
         private void chkbPasswortEinblenden_CheckedChanged(object sender, EventArgs e)
         {
-            if(chkbPasswortEinblenden.Checked)
+            if (chkbPasswortEinblenden.Checked)
             {
                 txtPassword.PasswordChar = '\0';
             }
@@ -77,6 +76,42 @@ namespace PABuchungssystemSQL
         private void FormLogin_Load(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = '*';
+        }
+
+        private bool FormCheckOpened(string name)
+        {
+            FormCollection fc = Application.OpenForms;
+
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == name)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private string GetKontoTyp(string login)
+        {
+            SqlCommand cmd = new SqlCommand();
+
+            try
+            {
+                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("loginDB")))
+                {
+                    sqlConn.Open();
+                    cmd = new SqlCommand("select typ from userdata where login = @login", sqlConn);
+                    cmd.Parameters.AddWithValue("@login", login);
+                    string kontoTyp = (string)cmd.ExecuteScalar();
+                    return kontoTyp;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return "";
+            }
         }
     }
 }

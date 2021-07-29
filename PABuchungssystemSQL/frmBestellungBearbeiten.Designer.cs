@@ -41,15 +41,16 @@ namespace PABuchungssystemSQL
             this.lblBestellungsnr = new System.Windows.Forms.Label();
             this.dtpBestellungDate = new System.Windows.Forms.DateTimePicker();
             this.dtpBestellungTime = new System.Windows.Forms.DateTimePicker();
+            this.lblBestellungbearbeiten = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAbbrechen
             // 
             this.btnAbbrechen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbbrechen.Location = new System.Drawing.Point(319, 384);
-            this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAbbrechen.Location = new System.Drawing.Point(446, 485);
+            this.btnAbbrechen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAbbrechen.Name = "btnAbbrechen";
-            this.btnAbbrechen.Size = new System.Drawing.Size(120, 30);
+            this.btnAbbrechen.Size = new System.Drawing.Size(160, 37);
             this.btnAbbrechen.TabIndex = 62;
             this.btnAbbrechen.Text = "Abbrechen";
             this.btnAbbrechen.UseVisualStyleBackColor = true;
@@ -58,30 +59,29 @@ namespace PABuchungssystemSQL
             // txtKundennr
             // 
             this.txtKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKundennr.Location = new System.Drawing.Point(184, 215);
-            this.txtKundennr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKundennr.Location = new System.Drawing.Point(266, 277);
+            this.txtKundennr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKundennr.Name = "txtKundennr";
-            this.txtKundennr.Size = new System.Drawing.Size(255, 23);
+            this.txtKundennr.Size = new System.Drawing.Size(339, 26);
             this.txtKundennr.TabIndex = 51;
             // 
             // lblKundennr
             // 
             this.lblKundennr.AutoSize = true;
             this.lblKundennr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKundennr.Location = new System.Drawing.Point(70, 218);
-            this.lblKundennr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblKundennr.Location = new System.Drawing.Point(114, 280);
             this.lblKundennr.Name = "lblKundennr";
-            this.lblKundennr.Size = new System.Drawing.Size(76, 17);
+            this.lblKundennr.Size = new System.Drawing.Size(88, 20);
             this.lblKundennr.TabIndex = 50;
             this.lblKundennr.Text = "KundenNr:";
             // 
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(184, 384);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOK.Location = new System.Drawing.Point(266, 485);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(120, 30);
+            this.btnOK.Size = new System.Drawing.Size(160, 37);
             this.btnOK.TabIndex = 49;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -90,38 +90,37 @@ namespace PABuchungssystemSQL
             // txtDatum
             // 
             this.txtDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDatum.Location = new System.Drawing.Point(184, 294);
-            this.txtDatum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDatum.Location = new System.Drawing.Point(266, 374);
+            this.txtDatum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDatum.Name = "txtDatum";
-            this.txtDatum.Size = new System.Drawing.Size(255, 23);
+            this.txtDatum.Size = new System.Drawing.Size(339, 26);
             this.txtDatum.TabIndex = 48;
             // 
             // txtProduktnr
             // 
             this.txtProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduktnr.Location = new System.Drawing.Point(184, 256);
-            this.txtProduktnr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProduktnr.Location = new System.Drawing.Point(266, 327);
+            this.txtProduktnr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProduktnr.Name = "txtProduktnr";
-            this.txtProduktnr.Size = new System.Drawing.Size(255, 23);
+            this.txtProduktnr.Size = new System.Drawing.Size(339, 26);
             this.txtProduktnr.TabIndex = 47;
             // 
             // txtBestellungsnr
             // 
             this.txtBestellungsnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBestellungsnr.Location = new System.Drawing.Point(184, 172);
-            this.txtBestellungsnr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBestellungsnr.Location = new System.Drawing.Point(266, 224);
+            this.txtBestellungsnr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBestellungsnr.Name = "txtBestellungsnr";
-            this.txtBestellungsnr.Size = new System.Drawing.Size(255, 23);
+            this.txtBestellungsnr.Size = new System.Drawing.Size(339, 26);
             this.txtBestellungsnr.TabIndex = 46;
             // 
             // lblDatum
             // 
             this.lblDatum.AutoSize = true;
             this.lblDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatum.Location = new System.Drawing.Point(70, 297);
-            this.lblDatum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDatum.Location = new System.Drawing.Point(114, 378);
             this.lblDatum.Name = "lblDatum";
-            this.lblDatum.Size = new System.Drawing.Size(53, 17);
+            this.lblDatum.Size = new System.Drawing.Size(64, 20);
             this.lblDatum.TabIndex = 45;
             this.lblDatum.Text = "Datum:";
             // 
@@ -129,10 +128,9 @@ namespace PABuchungssystemSQL
             // 
             this.lblProduktnr.AutoSize = true;
             this.lblProduktnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduktnr.Location = new System.Drawing.Point(70, 258);
-            this.lblProduktnr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblProduktnr.Location = new System.Drawing.Point(114, 330);
             this.lblProduktnr.Name = "lblProduktnr";
-            this.lblProduktnr.Size = new System.Drawing.Size(76, 17);
+            this.lblProduktnr.Size = new System.Drawing.Size(89, 20);
             this.lblProduktnr.TabIndex = 44;
             this.lblProduktnr.Text = "ProduktNr:";
             // 
@@ -140,10 +138,9 @@ namespace PABuchungssystemSQL
             // 
             this.lblBestellungsnr.AutoSize = true;
             this.lblBestellungsnr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBestellungsnr.Location = new System.Drawing.Point(70, 175);
-            this.lblBestellungsnr.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBestellungsnr.Location = new System.Drawing.Point(114, 227);
             this.lblBestellungsnr.Name = "lblBestellungsnr";
-            this.lblBestellungsnr.Size = new System.Drawing.Size(100, 17);
+            this.lblBestellungsnr.Size = new System.Drawing.Size(120, 20);
             this.lblBestellungsnr.TabIndex = 43;
             this.lblBestellungsnr.Text = "BestellungsNr:";
             // 
@@ -151,9 +148,10 @@ namespace PABuchungssystemSQL
             // 
             this.dtpBestellungDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBestellungDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBestellungDate.Location = new System.Drawing.Point(184, 322);
+            this.dtpBestellungDate.Location = new System.Drawing.Point(266, 415);
+            this.dtpBestellungDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpBestellungDate.Name = "dtpBestellungDate";
-            this.dtpBestellungDate.Size = new System.Drawing.Size(120, 23);
+            this.dtpBestellungDate.Size = new System.Drawing.Size(159, 26);
             this.dtpBestellungDate.TabIndex = 63;
             this.dtpBestellungDate.ValueChanged += new System.EventHandler(this.dtpBestellung_ValueChanged);
             // 
@@ -161,18 +159,32 @@ namespace PABuchungssystemSQL
             // 
             this.dtpBestellungTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBestellungTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpBestellungTime.Location = new System.Drawing.Point(319, 322);
+            this.dtpBestellungTime.Location = new System.Drawing.Point(446, 415);
+            this.dtpBestellungTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpBestellungTime.Name = "dtpBestellungTime";
             this.dtpBestellungTime.ShowUpDown = true;
-            this.dtpBestellungTime.Size = new System.Drawing.Size(120, 23);
+            this.dtpBestellungTime.Size = new System.Drawing.Size(159, 26);
             this.dtpBestellungTime.TabIndex = 64;
             this.dtpBestellungTime.ValueChanged += new System.EventHandler(this.dtpBestellung_ValueChanged);
             // 
+            // lblBestellungbearbeiten
+            // 
+            this.lblBestellungbearbeiten.BackColor = System.Drawing.Color.SteelBlue;
+            this.lblBestellungbearbeiten.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBestellungbearbeiten.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblBestellungbearbeiten.Location = new System.Drawing.Point(1, 22);
+            this.lblBestellungbearbeiten.Name = "lblBestellungbearbeiten";
+            this.lblBestellungbearbeiten.Size = new System.Drawing.Size(788, 49);
+            this.lblBestellungbearbeiten.TabIndex = 65;
+            this.lblBestellungbearbeiten.Text = "Bestellung bearbeiten";
+            this.lblBestellungbearbeiten.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmBestellungBearbeiten
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 595);
+            this.ClientSize = new System.Drawing.Size(789, 732);
+            this.Controls.Add(this.lblBestellungbearbeiten);
             this.Controls.Add(this.dtpBestellungTime);
             this.Controls.Add(this.dtpBestellungDate);
             this.Controls.Add(this.btnAbbrechen);
@@ -185,10 +197,10 @@ namespace PABuchungssystemSQL
             this.Controls.Add(this.lblDatum);
             this.Controls.Add(this.lblProduktnr);
             this.Controls.Add(this.lblBestellungsnr);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmBestellungBearbeiten";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bestellung Bearbeiten";
+            this.Text = "Bestellsystem";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +220,6 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.Label lblBestellungsnr;
         private System.Windows.Forms.DateTimePicker dtpBestellungDate;
         private System.Windows.Forms.DateTimePicker dtpBestellungTime;
+        private System.Windows.Forms.Label lblBestellungbearbeiten;
     }
 }

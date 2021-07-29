@@ -142,5 +142,12 @@ namespace PABuchungssystemSQL
                 chkbKundennr.Checked = false;
             }
         }
+
+        private void btnZurück_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmHauptmenue fH = new frmHauptmenue();
+            fH.Show();
+        }
     } 
 }

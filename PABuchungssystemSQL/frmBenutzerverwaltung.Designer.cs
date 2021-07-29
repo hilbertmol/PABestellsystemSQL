@@ -46,6 +46,7 @@ namespace PABuchungssystemSQL
             this.btnSearch = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnZurück = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBenutzer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,12 +66,12 @@ namespace PABuchungssystemSQL
             // 
             this.dgvBenutzer.AllowUserToAddRows = false;
             this.dgvBenutzer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBenutzer.Location = new System.Drawing.Point(65, 494);
+            this.dgvBenutzer.Location = new System.Drawing.Point(65, 480);
             this.dgvBenutzer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvBenutzer.Name = "dgvBenutzer";
             this.dgvBenutzer.RowHeadersWidth = 51;
             this.dgvBenutzer.RowTemplate.Height = 24;
-            this.dgvBenutzer.Size = new System.Drawing.Size(1184, 432);
+            this.dgvBenutzer.Size = new System.Drawing.Size(1184, 379);
             this.dgvBenutzer.TabIndex = 40;
             this.dgvBenutzer.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvBenutzer_CellFormatting);
             this.dgvBenutzer.SelectionChanged += new System.EventHandler(this.dgvBenutzer_SelectionChanged);
@@ -212,7 +213,7 @@ namespace PABuchungssystemSQL
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(65, 417);
+            this.btnSearch.Location = new System.Drawing.Point(65, 409);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(160, 37);
@@ -224,7 +225,7 @@ namespace PABuchungssystemSQL
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(249, 417);
+            this.button3.Location = new System.Drawing.Point(249, 409);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 37);
@@ -236,7 +237,7 @@ namespace PABuchungssystemSQL
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(435, 417);
+            this.button4.Location = new System.Drawing.Point(435, 409);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(160, 37);
@@ -245,11 +246,24 @@ namespace PABuchungssystemSQL
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.btnLöschen_Click);
             // 
+            // btnZurück
+            // 
+            this.btnZurück.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnZurück.Location = new System.Drawing.Point(65, 890);
+            this.btnZurück.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnZurück.Name = "btnZurück";
+            this.btnZurück.Size = new System.Drawing.Size(160, 37);
+            this.btnZurück.TabIndex = 72;
+            this.btnZurück.Text = "Zurück";
+            this.btnZurück.UseVisualStyleBackColor = true;
+            this.btnZurück.Click += new System.EventHandler(this.btnZurück_Click);
+            // 
             // frmBenutzerverwaltung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 954);
+            this.Controls.Add(this.btnZurück);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnSearch);
@@ -270,7 +284,7 @@ namespace PABuchungssystemSQL
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBenutzerverwaltung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Benutzerverwaltung";
+            this.Text = "Bestellsystem";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBestellungen_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBenutzer)).EndInit();
             this.ResumeLayout(false);
@@ -297,5 +311,6 @@ namespace PABuchungssystemSQL
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnZurück;
     }
 }
