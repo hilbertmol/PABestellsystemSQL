@@ -44,6 +44,10 @@ namespace PABestellsystemSQL
             this.cmbGruppieren = new System.Windows.Forms.ComboBox();
             this.btnGruppieren = new System.Windows.Forms.Button();
             this.btnZurück = new System.Windows.Forms.Button();
+            this.lblKunden = new System.Windows.Forms.Label();
+            this.lblBestellungen = new System.Windows.Forms.Label();
+            this.lblProdukte = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKunden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBestellungen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdukte)).BeginInit();
@@ -56,7 +60,7 @@ namespace PABestellsystemSQL
             this.dgvKunden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvKunden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKunden.Location = new System.Drawing.Point(27, 80);
+            this.dgvKunden.Location = new System.Drawing.Point(27, 90);
             this.dgvKunden.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvKunden.Name = "dgvKunden";
             this.dgvKunden.RowHeadersWidth = 51;
@@ -68,7 +72,7 @@ namespace PABestellsystemSQL
             // 
             this.dgvBestellungen.AllowUserToAddRows = false;
             this.dgvBestellungen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBestellungen.Location = new System.Drawing.Point(27, 320);
+            this.dgvBestellungen.Location = new System.Drawing.Point(27, 328);
             this.dgvBestellungen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvBestellungen.Name = "dgvBestellungen";
             this.dgvBestellungen.RowHeadersWidth = 51;
@@ -82,7 +86,7 @@ namespace PABestellsystemSQL
             this.dgvProdukte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvProdukte.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProdukte.Location = new System.Drawing.Point(663, 320);
+            this.dgvProdukte.Location = new System.Drawing.Point(663, 328);
             this.dgvProdukte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvProdukte.Name = "dgvProdukte";
             this.dgvProdukte.RowHeadersWidth = 51;
@@ -96,7 +100,7 @@ namespace PABestellsystemSQL
             this.dgvUebersicht.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvUebersicht.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUebersicht.Location = new System.Drawing.Point(27, 539);
+            this.dgvUebersicht.Location = new System.Drawing.Point(27, 545);
             this.dgvUebersicht.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvUebersicht.Name = "dgvUebersicht";
             this.dgvUebersicht.RowHeadersWidth = 51;
@@ -148,7 +152,7 @@ namespace PABestellsystemSQL
             this.lblAnzKA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAnzKA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblAnzKA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnzKA.Location = new System.Drawing.Point(199, 801);
+            this.lblAnzKA.Location = new System.Drawing.Point(222, 801);
             this.lblAnzKA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAnzKA.Name = "lblAnzKA";
             this.lblAnzKA.Size = new System.Drawing.Size(143, 33);
@@ -160,7 +164,7 @@ namespace PABestellsystemSQL
             this.lblSummeA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSummeA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSummeA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSummeA.Location = new System.Drawing.Point(199, 855);
+            this.lblSummeA.Location = new System.Drawing.Point(222, 855);
             this.lblSummeA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSummeA.Name = "lblSummeA";
             this.lblSummeA.Size = new System.Drawing.Size(143, 33);
@@ -175,16 +179,16 @@ namespace PABestellsystemSQL
             this.lblSumme.Location = new System.Drawing.Point(23, 862);
             this.lblSumme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSumme.Name = "lblSumme";
-            this.lblSumme.Size = new System.Drawing.Size(71, 20);
+            this.lblSumme.Size = new System.Drawing.Size(173, 20);
             this.lblSumme.TabIndex = 46;
-            this.lblSumme.Text = "Summe:";
+            this.lblSumme.Text = "Summe Bestellungen:";
             // 
             // lblAnzahlPrA
             // 
             this.lblAnzahlPrA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAnzahlPrA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblAnzahlPrA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnzahlPrA.Location = new System.Drawing.Point(199, 905);
+            this.lblAnzahlPrA.Location = new System.Drawing.Point(222, 905);
             this.lblAnzahlPrA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAnzahlPrA.Name = "lblAnzahlPrA";
             this.lblAnzahlPrA.Size = new System.Drawing.Size(143, 33);
@@ -240,11 +244,75 @@ namespace PABestellsystemSQL
             this.btnZurück.UseVisualStyleBackColor = true;
             this.btnZurück.Click += new System.EventHandler(this.btnZurück_Click);
             // 
+            // lblKunden
+            // 
+            this.lblKunden.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblKunden.AutoSize = true;
+            this.lblKunden.BackColor = System.Drawing.Color.White;
+            this.lblKunden.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblKunden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKunden.Location = new System.Drawing.Point(27, 65);
+            this.lblKunden.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblKunden.Name = "lblKunden";
+            this.lblKunden.Size = new System.Drawing.Size(72, 22);
+            this.lblKunden.TabIndex = 53;
+            this.lblKunden.Text = "Kunden:";
+            // 
+            // lblBestellungen
+            // 
+            this.lblBestellungen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBestellungen.AutoSize = true;
+            this.lblBestellungen.BackColor = System.Drawing.Color.White;
+            this.lblBestellungen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblBestellungen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBestellungen.Location = new System.Drawing.Point(27, 303);
+            this.lblBestellungen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBestellungen.Name = "lblBestellungen";
+            this.lblBestellungen.Size = new System.Drawing.Size(113, 22);
+            this.lblBestellungen.TabIndex = 54;
+            this.lblBestellungen.Text = "Bestellungen:";
+            // 
+            // lblProdukte
+            // 
+            this.lblProdukte.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblProdukte.AutoSize = true;
+            this.lblProdukte.BackColor = System.Drawing.Color.White;
+            this.lblProdukte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblProdukte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProdukte.Location = new System.Drawing.Point(663, 303);
+            this.lblProdukte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProdukte.Name = "lblProdukte";
+            this.lblProdukte.Size = new System.Drawing.Size(82, 22);
+            this.lblProdukte.TabIndex = 55;
+            this.lblProdukte.Text = "Produkte:";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(27, 520);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 22);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "Zusammenfassung:";
+            // 
             // frmUebersicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 954);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblProdukte);
+            this.Controls.Add(this.lblBestellungen);
+            this.Controls.Add(this.lblKunden);
             this.Controls.Add(this.btnZurück);
             this.Controls.Add(this.btnGruppieren);
             this.Controls.Add(this.cmbGruppieren);
@@ -291,5 +359,9 @@ namespace PABestellsystemSQL
         private System.Windows.Forms.ComboBox cmbGruppieren;
         private System.Windows.Forms.Button btnGruppieren;
         private System.Windows.Forms.Button btnZurück;
+        private System.Windows.Forms.Label lblKunden;
+        private System.Windows.Forms.Label lblBestellungen;
+        private System.Windows.Forms.Label lblProdukte;
+        private System.Windows.Forms.Label label1;
     }
 }

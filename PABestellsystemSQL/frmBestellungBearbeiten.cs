@@ -55,6 +55,7 @@ namespace PABestellsystemSQL
                     if (drv.Row.RowState == DataRowState.Detached)
                     {
                         cmdStr = "insert into bestellungen values (@bestellungsnr, @kundennr, @produktnr, @datum)";
+                        UpdateStueckzahl(txtProduktnr.Text, GetStueckzahl(txtProduktnr.Text), -1); 
                     }
                     else
                     {
@@ -62,6 +63,8 @@ namespace PABestellsystemSQL
                                                     ", produktnr = @produktnr" +
                                                     ", datum = @datum" +
                                                     " where bestellungsnr = @bestellungsnr";
+                        UpdateStueckzahl(produktnrAlt, GetStueckzahl(produktnrAlt), 1);
+                        UpdateStueckzahl(txtProduktnr.Text, GetStueckzahl(txtProduktnr.Text), -1); 
                     }
                     using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
                     {
@@ -75,8 +78,6 @@ namespace PABestellsystemSQL
                         cmd.Parameters.AddWithValue("@datum", txtDatum.Text);
                         cmd.ExecuteNonQuery();
                     }
-                    UpdateStueckzahlAdd(produktnrAlt, GetStueckzahl(produktnrAlt));
-                    UpdateStueckzahlSub(txtProduktnr.Text, GetStueckzahl(txtProduktnr.Text));
                 }
                 else
                 {
@@ -125,12 +126,13 @@ namespace PABestellsystemSQL
             }
         }
 
-        private void UpdateStueckzahlSub(string produktnr, int stueckzahl)
+        private void UpdateStueckzahl(string produktnr, int stueckzahl, int i)
         {
             SqlCommand cmd = new SqlCommand();
             string cmdStr = "";
             try
             {
+                stueckzahl = stueckzahl + i;
                 using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
                 {
                     sqlConn.Open();
@@ -139,32 +141,7 @@ namespace PABestellsystemSQL
                                                     " where produktnr = @produktnr";
                     cmd.CommandText = cmdStr;
                     cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@stueckzahl", --stueckzahl);
-                    cmd.Parameters.AddWithValue("@produktnr", produktnr);
-                    cmd.ExecuteNonQuery();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void UpdateStueckzahlAdd(string produktnr, int stueckzahl)
-        {
-            SqlCommand cmd = new SqlCommand();
-            string cmdStr = "";
-            try
-            {
-                using (SqlConnection sqlConn = new SqlConnection(Helper.CnnVal("managementDB")))
-                {
-                    sqlConn.Open();
-                    cmd.Connection = sqlConn;
-                    cmdStr = "update produkte set stueckzahl = @stueckzahl" +
-                                                    " where produktnr = @produktnr";
-                    cmd.CommandText = cmdStr;
-                    cmd.CommandType = CommandType.Text;
-                    cmd.Parameters.AddWithValue("@stueckzahl", ++stueckzahl);
+                    cmd.Parameters.AddWithValue("@stueckzahl", stueckzahl);
                     cmd.Parameters.AddWithValue("@produktnr", produktnr);
                     cmd.ExecuteNonQuery();
                 }

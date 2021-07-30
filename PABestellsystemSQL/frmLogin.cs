@@ -13,8 +13,6 @@ namespace PABestellsystemSQL
 {
     public partial class frmLogin : Form
     {
-        public string BenutzerAktuell { get; set; }
-
         public frmLogin()
         {
             InitializeComponent();

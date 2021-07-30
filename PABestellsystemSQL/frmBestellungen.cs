@@ -78,7 +78,6 @@ namespace PABestellsystemSQL
                 MessageBox.Show(ex.Message);
             }
             UpdateBindingDSource();
-            //dgvBestellungen.Refresh();
         }
 
         private void frmBestellungen_FormClosing(object sender, FormClosingEventArgs e)
