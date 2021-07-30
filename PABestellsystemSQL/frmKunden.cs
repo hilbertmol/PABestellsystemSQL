@@ -64,8 +64,6 @@ namespace PABestellsystemSQL
                         cmdStr = "select * from kunden";
                         cmd = new SqlCommand(cmdStr, sqlConn);
                     }
-
-                    //cmd.CommandType = CommandType.StoredProcedure;
                     sqlDa.SelectCommand = cmd;
                     dt = new DataTable();
                     sqlDa.Fill(dt);
